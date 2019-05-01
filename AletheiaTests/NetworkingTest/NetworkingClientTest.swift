@@ -45,14 +45,14 @@ class NetworkingClientTest: XCTestCase, Networkable {
 
 extension NetworkingClientTest: JSONDecodablePeorocol {
     
-    typealias ResponseStruct = HttpbinGet?
+    typealias ResponseStruct = Httpbin?
     
-    func parseJSON(data: Data) -> HttpbinGet? {
-        return data.al.jsonType(type: HttpbinGet.self)
+    func parseJSON(data: Data) -> Httpbin? {
+        return data.al.jsonType(type: Httpbin.self)
     }
 }
 
-struct HttpbinGet: Codable {
+struct Httpbin: Codable {
     var origin: String
     var url: String
 }
