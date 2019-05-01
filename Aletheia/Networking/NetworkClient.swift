@@ -19,7 +19,7 @@ public protocol NetworkClientProtocol {
 
 public struct NetworkClient: NetworkClientProtocol {
 
-    var sessionManager: SessionManager?
+//    var sessionManager: SessionManager?
     
     /// cf. https://github.com/Alamofire/Alamofire/issues/157
     ///
