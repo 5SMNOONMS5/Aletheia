@@ -14,7 +14,7 @@ class NetworkingClientTest: XCTestCase, Networkable {
     
     var parameters: [String : Any]? = [:]
     
-    var method: HTTPMethod = HTTPMethod.post
+    var method: HTTPMethod = HTTPMethod.get
     
     var baseURL: String = "https://httpbin.org/get"
     
