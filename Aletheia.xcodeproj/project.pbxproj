@@ -1,0 +1,696 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC178284226C58F900332B05 /* Aletheia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC17827A226C58F900332B05 /* Aletheia.framework */; };
+		DC178289226C58F900332B05 /* AletheiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC178288226C58F900332B05 /* AletheiaTests.swift */; };
+		DC17828B226C58F900332B05 /* Aletheia.h in Headers */ = {isa = PBXBuildFile; fileRef = DC17827D226C58F900332B05 /* Aletheia.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC1782B7226C593500332B05 /* Extension+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC178295226C593500332B05 /* Extension+UIImageView.swift */; };
+		DC1782B8226C593500332B05 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC178296226C593500332B05 /* Extension+UIViewController.swift */; };
+		DC1782B9226C593500332B05 /* Extension+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC178297226C593500332B05 /* Extension+UIImage.swift */; };
+		DC1782BA226C593500332B05 /* Extension+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC178298226C593500332B05 /* Extension+UITableView.swift */; };
+		DC1782BB226C593500332B05 /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC178299226C593500332B05 /* Extension+UIColor.swift */; };
+		DC1782BC226C593500332B05 /* Extension+CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17829A226C593500332B05 /* Extension+CALayer.swift */; };
+		DC1782BD226C593500332B05 /* Extension+UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17829B226C593500332B05 /* Extension+UIButton.swift */; };
+		DC1782BE226C593500332B05 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17829C226C593500332B05 /* Extension+UIView.swift */; };
+		DC1782BF226C593500332B05 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17829E226C593500332B05 /* NetworkClient.swift */; };
+		DC1782C0226C593500332B05 /* NetworkJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC17829F226C593500332B05 /* NetworkJson.swift */; };
+		DC1782C1226C593500332B05 /* NetworkProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782A0226C593500332B05 /* NetworkProtocol.swift */; };
+		DC1782C2226C593500332B05 /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782A2226C593500332B05 /* Print.swift */; };
+		DC1782C3226C593500332B05 /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782A3226C593500332B05 /* Screen.swift */; };
+		DC1782C4226C593500332B05 /* Systems.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782A4226C593500332B05 /* Systems.swift */; };
+		DC1782C5226C593500332B05 /* Aletheia.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782A6226C593500332B05 /* Aletheia.swift */; };
+		DC1782C6226C593500332B05 /* Extension+Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782A8226C593500332B05 /* Extension+Double.swift */; };
+		DC1782C7226C593500332B05 /* Extension+Responder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782A9226C593500332B05 /* Extension+Responder.swift */; };
+		DC1782C8226C593500332B05 /* Extension+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782AA226C593500332B05 /* Extension+Dictionary.swift */; };
+		DC1782C9226C593500332B05 /* Extension+Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782AB226C593500332B05 /* Extension+Array.swift */; };
+		DC1782CA226C593500332B05 /* Extension+CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782AC226C593500332B05 /* Extension+CGFloat.swift */; };
+		DC1782CB226C593500332B05 /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782AD226C593500332B05 /* Extension+String.swift */; };
+		DC1782CC226C593500332B05 /* Extension+DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782AE226C593500332B05 /* Extension+DispatchQueue.swift */; };
+		DC1782CD226C593500332B05 /* Extension+NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782AF226C593500332B05 /* Extension+NSObject.swift */; };
+		DC1782CE226C593500332B05 /* Extension+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782B0226C593500332B05 /* Extension+URL.swift */; };
+		DC1782CF226C593500332B05 /* Extension+FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782B1226C593500332B05 /* Extension+FileManager.swift */; };
+		DC1782D0226C593500332B05 /* Extension+Int.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782B2226C593500332B05 /* Extension+Int.swift */; };
+		DC1782D1226C593500332B05 /* Extension+UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782B3226C593500332B05 /* Extension+UIApplication.swift */; };
+		DC1782D2226C593500332B05 /* Extension+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782B4226C593500332B05 /* Extension+Data.swift */; };
+		DC1782D3226C593500332B05 /* Extension+Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782B5226C593500332B05 /* Extension+Character.swift */; };
+		DC1782D4226C593500332B05 /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782B6226C593500332B05 /* Extension+Date.swift */; };
+		DC1782D9226C594A00332B05 /* NetworkingClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782D6226C594A00332B05 /* NetworkingClientTest.swift */; };
+		DC1782DA226C594A00332B05 /* ExtensionStringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782D8226C594A00332B05 /* ExtensionStringTest.swift */; };
+		DCDEB7B922746AD70032285E /* Cartfile in Resources */ = {isa = PBXBuildFile; fileRef = DCDEB7B822746AD70032285E /* Cartfile */; };
+		DCDEB7BB22746C070032285E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DCDEB7BA22746C050032285E /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC178285226C58F900332B05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC178271226C58F900332B05 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC178279226C58F900332B05;
+			remoteInfo = Aletheia;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC17827A226C58F900332B05 /* Aletheia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Aletheia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC17827D226C58F900332B05 /* Aletheia.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Aletheia.h; sourceTree = "<group>"; };
+		DC17827E226C58F900332B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC178283226C58F900332B05 /* AletheiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AletheiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC178288226C58F900332B05 /* AletheiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AletheiaTests.swift; sourceTree = "<group>"; };
+		DC17828A226C58F900332B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC178295226C593500332B05 /* Extension+UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIImageView.swift"; sourceTree = "<group>"; };
+		DC178296226C593500332B05 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
+		DC178297226C593500332B05 /* Extension+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIImage.swift"; sourceTree = "<group>"; };
+		DC178298226C593500332B05 /* Extension+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UITableView.swift"; sourceTree = "<group>"; };
+		DC178299226C593500332B05 /* Extension+UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
+		DC17829A226C593500332B05 /* Extension+CALayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+CALayer.swift"; sourceTree = "<group>"; };
+		DC17829B226C593500332B05 /* Extension+UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIButton.swift"; sourceTree = "<group>"; };
+		DC17829C226C593500332B05 /* Extension+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		DC17829E226C593500332B05 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		DC17829F226C593500332B05 /* NetworkJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkJson.swift; sourceTree = "<group>"; };
+		DC1782A0226C593500332B05 /* NetworkProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkProtocol.swift; sourceTree = "<group>"; };
+		DC1782A2226C593500332B05 /* Print.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Print.swift; sourceTree = "<group>"; };
+		DC1782A3226C593500332B05 /* Screen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		DC1782A4226C593500332B05 /* Systems.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Systems.swift; sourceTree = "<group>"; };
+		DC1782A6226C593500332B05 /* Aletheia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Aletheia.swift; sourceTree = "<group>"; };
+		DC1782A8226C593500332B05 /* Extension+Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Double.swift"; sourceTree = "<group>"; };
+		DC1782A9226C593500332B05 /* Extension+Responder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Responder.swift"; sourceTree = "<group>"; };
+		DC1782AA226C593500332B05 /* Extension+Dictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Dictionary.swift"; sourceTree = "<group>"; };
+		DC1782AB226C593500332B05 /* Extension+Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Array.swift"; sourceTree = "<group>"; };
+		DC1782AC226C593500332B05 /* Extension+CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+CGFloat.swift"; sourceTree = "<group>"; };
+		DC1782AD226C593500332B05 /* Extension+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
+		DC1782AE226C593500332B05 /* Extension+DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+DispatchQueue.swift"; sourceTree = "<group>"; };
+		DC1782AF226C593500332B05 /* Extension+NSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+NSObject.swift"; sourceTree = "<group>"; };
+		DC1782B0226C593500332B05 /* Extension+URL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+URL.swift"; sourceTree = "<group>"; };
+		DC1782B1226C593500332B05 /* Extension+FileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+FileManager.swift"; sourceTree = "<group>"; };
+		DC1782B2226C593500332B05 /* Extension+Int.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Int.swift"; sourceTree = "<group>"; };
+		DC1782B3226C593500332B05 /* Extension+UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+UIApplication.swift"; sourceTree = "<group>"; };
+		DC1782B4226C593500332B05 /* Extension+Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Data.swift"; sourceTree = "<group>"; };
+		DC1782B5226C593500332B05 /* Extension+Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Character.swift"; sourceTree = "<group>"; };
+		DC1782B6226C593500332B05 /* Extension+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
+		DC1782D6226C594A00332B05 /* NetworkingClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingClientTest.swift; sourceTree = "<group>"; };
+		DC1782D8226C594A00332B05 /* ExtensionStringTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionStringTest.swift; sourceTree = "<group>"; };
+		DCDEB7B822746AD70032285E /* Cartfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		DCDEB7BA22746C050032285E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC178277226C58F900332B05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC178280226C58F900332B05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC178284226C58F900332B05 /* Aletheia.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC178270226C58F900332B05 = {
+			isa = PBXGroup;
+			children = (
+				DCDEB7B822746AD70032285E /* Cartfile */,
+				DCDEB7BA22746C050032285E /* README.md */,
+				DC17827C226C58F900332B05 /* Aletheia */,
+				DC178287226C58F900332B05 /* AletheiaTests */,
+				DC17827B226C58F900332B05 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC17827B226C58F900332B05 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC17827A226C58F900332B05 /* Aletheia.framework */,
+				DC178283226C58F900332B05 /* AletheiaTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC17827C226C58F900332B05 /* Aletheia */ = {
+			isa = PBXGroup;
+			children = (
+				DC1782A7226C593500332B05 /* Extensions */,
+				DC178294226C593500332B05 /* ExtensionsUI */,
+				DC1782A5226C593500332B05 /* General */,
+				DC1782A1226C593500332B05 /* Helper */,
+				DC17829D226C593500332B05 /* Networking */,
+				DC17827D226C58F900332B05 /* Aletheia.h */,
+				DC17827E226C58F900332B05 /* Info.plist */,
+			);
+			path = Aletheia;
+			sourceTree = "<group>";
+		};
+		DC178287226C58F900332B05 /* AletheiaTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC1782D7226C594A00332B05 /* ExtensionsTest */,
+				DC1782D5226C594A00332B05 /* NetworkingTest */,
+				DC178288226C58F900332B05 /* AletheiaTests.swift */,
+				DC17828A226C58F900332B05 /* Info.plist */,
+			);
+			path = AletheiaTests;
+			sourceTree = "<group>";
+		};
+		DC178294226C593500332B05 /* ExtensionsUI */ = {
+			isa = PBXGroup;
+			children = (
+				DC178295226C593500332B05 /* Extension+UIImageView.swift */,
+				DC178296226C593500332B05 /* Extension+UIViewController.swift */,
+				DC178297226C593500332B05 /* Extension+UIImage.swift */,
+				DC178298226C593500332B05 /* Extension+UITableView.swift */,
+				DC178299226C593500332B05 /* Extension+UIColor.swift */,
+				DC17829A226C593500332B05 /* Extension+CALayer.swift */,
+				DC17829B226C593500332B05 /* Extension+UIButton.swift */,
+				DC17829C226C593500332B05 /* Extension+UIView.swift */,
+			);
+			path = ExtensionsUI;
+			sourceTree = "<group>";
+		};
+		DC17829D226C593500332B05 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DC17829E226C593500332B05 /* NetworkClient.swift */,
+				DC17829F226C593500332B05 /* NetworkJson.swift */,
+				DC1782A0226C593500332B05 /* NetworkProtocol.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DC1782A1226C593500332B05 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				DC1782A2226C593500332B05 /* Print.swift */,
+				DC1782A3226C593500332B05 /* Screen.swift */,
+				DC1782A4226C593500332B05 /* Systems.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		DC1782A5226C593500332B05 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				DC1782A6226C593500332B05 /* Aletheia.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		DC1782A7226C593500332B05 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DC1782A8226C593500332B05 /* Extension+Double.swift */,
+				DC1782A9226C593500332B05 /* Extension+Responder.swift */,
+				DC1782AA226C593500332B05 /* Extension+Dictionary.swift */,
+				DC1782AB226C593500332B05 /* Extension+Array.swift */,
+				DC1782AC226C593500332B05 /* Extension+CGFloat.swift */,
+				DC1782AD226C593500332B05 /* Extension+String.swift */,
+				DC1782AE226C593500332B05 /* Extension+DispatchQueue.swift */,
+				DC1782AF226C593500332B05 /* Extension+NSObject.swift */,
+				DC1782B0226C593500332B05 /* Extension+URL.swift */,
+				DC1782B1226C593500332B05 /* Extension+FileManager.swift */,
+				DC1782B2226C593500332B05 /* Extension+Int.swift */,
+				DC1782B3226C593500332B05 /* Extension+UIApplication.swift */,
+				DC1782B4226C593500332B05 /* Extension+Data.swift */,
+				DC1782B5226C593500332B05 /* Extension+Character.swift */,
+				DC1782B6226C593500332B05 /* Extension+Date.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DC1782D5226C594A00332B05 /* NetworkingTest */ = {
+			isa = PBXGroup;
+			children = (
+				DC1782D6226C594A00332B05 /* NetworkingClientTest.swift */,
+			);
+			path = NetworkingTest;
+			sourceTree = "<group>";
+		};
+		DC1782D7226C594A00332B05 /* ExtensionsTest */ = {
+			isa = PBXGroup;
+			children = (
+				DC1782D8226C594A00332B05 /* ExtensionStringTest.swift */,
+			);
+			path = ExtensionsTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DC178275226C58F900332B05 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC17828B226C58F900332B05 /* Aletheia.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		DC178279226C58F900332B05 /* Aletheia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC17828E226C58F900332B05 /* Build configuration list for PBXNativeTarget "Aletheia" */;
+			buildPhases = (
+				DC178275226C58F900332B05 /* Headers */,
+				DC178276226C58F900332B05 /* Sources */,
+				DC178277226C58F900332B05 /* Frameworks */,
+				DC178278226C58F900332B05 /* Resources */,
+				DCDEB7B62274685E0032285E /* [ Auto ]  Increasement */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Aletheia;
+			productName = Aletheia;
+			productReference = DC17827A226C58F900332B05 /* Aletheia.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC178282226C58F900332B05 /* AletheiaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC178291226C58F900332B05 /* Build configuration list for PBXNativeTarget "AletheiaTests" */;
+			buildPhases = (
+				DC17827F226C58F900332B05 /* Sources */,
+				DC178280226C58F900332B05 /* Frameworks */,
+				DC178281226C58F900332B05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC178286226C58F900332B05 /* PBXTargetDependency */,
+			);
+			name = AletheiaTests;
+			productName = AletheiaTests;
+			productReference = DC178283226C58F900332B05 /* AletheiaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC178271226C58F900332B05 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = stephenchen;
+				TargetAttributes = {
+					DC178279226C58F900332B05 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					DC178282226C58F900332B05 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = DC178274226C58F900332B05 /* Build configuration list for PBXProject "Aletheia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DC178270226C58F900332B05;
+			productRefGroup = DC17827B226C58F900332B05 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC178279226C58F900332B05 /* Aletheia */,
+				DC178282226C58F900332B05 /* AletheiaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC178278226C58F900332B05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCDEB7BB22746C070032285E /* README.md in Resources */,
+				DCDEB7B922746AD70032285E /* Cartfile in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC178281226C58F900332B05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		DCDEB7B62274685E0032285E /* [ Auto ]  Increasement */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[ Auto ]  Increasement";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nxcrun agvtool next-version -all\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC178276226C58F900332B05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1782B9226C593500332B05 /* Extension+UIImage.swift in Sources */,
+				DC1782CE226C593500332B05 /* Extension+URL.swift in Sources */,
+				DC1782BB226C593500332B05 /* Extension+UIColor.swift in Sources */,
+				DC1782CA226C593500332B05 /* Extension+CGFloat.swift in Sources */,
+				DC1782BE226C593500332B05 /* Extension+UIView.swift in Sources */,
+				DC1782C5226C593500332B05 /* Aletheia.swift in Sources */,
+				DC1782C6226C593500332B05 /* Extension+Double.swift in Sources */,
+				DC1782D0226C593500332B05 /* Extension+Int.swift in Sources */,
+				DC1782C3226C593500332B05 /* Screen.swift in Sources */,
+				DC1782D4226C593500332B05 /* Extension+Date.swift in Sources */,
+				DC1782B8226C593500332B05 /* Extension+UIViewController.swift in Sources */,
+				DC1782CB226C593500332B05 /* Extension+String.swift in Sources */,
+				DC1782CC226C593500332B05 /* Extension+DispatchQueue.swift in Sources */,
+				DC1782D3226C593500332B05 /* Extension+Character.swift in Sources */,
+				DC1782C8226C593500332B05 /* Extension+Dictionary.swift in Sources */,
+				DC1782C0226C593500332B05 /* NetworkJson.swift in Sources */,
+				DC1782CF226C593500332B05 /* Extension+FileManager.swift in Sources */,
+				DC1782C4226C593500332B05 /* Systems.swift in Sources */,
+				DC1782C9226C593500332B05 /* Extension+Array.swift in Sources */,
+				DC1782D2226C593500332B05 /* Extension+Data.swift in Sources */,
+				DC1782BD226C593500332B05 /* Extension+UIButton.swift in Sources */,
+				DC1782BF226C593500332B05 /* NetworkClient.swift in Sources */,
+				DC1782C2226C593500332B05 /* Print.swift in Sources */,
+				DC1782C7226C593500332B05 /* Extension+Responder.swift in Sources */,
+				DC1782CD226C593500332B05 /* Extension+NSObject.swift in Sources */,
+				DC1782BC226C593500332B05 /* Extension+CALayer.swift in Sources */,
+				DC1782C1226C593500332B05 /* NetworkProtocol.swift in Sources */,
+				DC1782B7226C593500332B05 /* Extension+UIImageView.swift in Sources */,
+				DC1782D1226C593500332B05 /* Extension+UIApplication.swift in Sources */,
+				DC1782BA226C593500332B05 /* Extension+UITableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC17827F226C58F900332B05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1782D9226C594A00332B05 /* NetworkingClientTest.swift in Sources */,
+				DC1782DA226C594A00332B05 /* ExtensionStringTest.swift in Sources */,
+				DC178289226C58F900332B05 /* AletheiaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC178286226C58F900332B05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC178279226C58F900332B05 /* Aletheia */;
+			targetProxy = DC178285226C58F900332B05 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DC17828C226C58F900332B05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DC17828D226C58F900332B05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 2;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DC17828F226C58F900332B05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NLHXHRPT3H;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 2;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Aletheia/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stephenchen.Aletheia;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC178290226C58F900332B05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = NLHXHRPT3H;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 2;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Aletheia/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stephenchen.Aletheia;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC178292226C58F900332B05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NLHXHRPT3H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AletheiaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stephenchen.AletheiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC178293226C58F900332B05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NLHXHRPT3H;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = AletheiaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stephenchen.AletheiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC178274226C58F900332B05 /* Build configuration list for PBXProject "Aletheia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC17828C226C58F900332B05 /* Debug */,
+				DC17828D226C58F900332B05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC17828E226C58F900332B05 /* Build configuration list for PBXNativeTarget "Aletheia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC17828F226C58F900332B05 /* Debug */,
+				DC178290226C58F900332B05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC178291226C58F900332B05 /* Build configuration list for PBXNativeTarget "AletheiaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC178292226C58F900332B05 /* Debug */,
+				DC178293226C58F900332B05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC178271226C58F900332B05 /* Project object */;
+}
