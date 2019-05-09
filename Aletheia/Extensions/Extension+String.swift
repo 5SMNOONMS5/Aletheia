@@ -40,6 +40,15 @@ extension AletheiaWrapper where Base == String {
         dateFormatter.timeZone = TimeZone.current
         return dateFormatter.date(from: base)
     }
+    
+    /// Valid given string is a correct email format
+    ///
+    /// - Returns: Bool
+    public func isValidEmail() -> Bool {
+        let reqularExpress = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailTest.evaluate(with: base)
+    }
 }
 
 

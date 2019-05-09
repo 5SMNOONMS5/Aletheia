@@ -45,4 +45,19 @@ extension AletheiaWrapper: JSONConvertibleProtocol where Base == Data {
         
         return result
     }
+    
+    func jsonType2<T, E>(types: (T.Type, E.Type), decoder: JSONDecoder?) -> (T?, E?) where T : Decodable, E : Decodable {
+        
+        var success: T? = nil
+        var error: E? = nil
+        
+        let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+        
+        try? success = decoder.decode(T.self, from: Data(base64Encoded: "a")!)
+        try? error = decoder.decode(E.self, from: Data(base64Encoded: "a")!)
+        
+        return (success, error)
+    }
 }
+
