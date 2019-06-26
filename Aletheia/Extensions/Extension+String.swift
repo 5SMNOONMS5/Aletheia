@@ -41,11 +41,31 @@ extension AletheiaWrapper where Base == String {
         return dateFormatter.date(from: base)
     }
     
-    /// Valid given string is a correct email format
+    /// Cut decimal for those price-like strings. For example from 1000.000 to 1000
+    ///
+    /// - Returns: no decimal string
+    public func withoutDecimal() -> String? {
+        if let subString = base.split(separator: ".").first {
+            return String(subString)
+        }
+        return nil
+    }
+    
+    /// Check if given string is a vaild URL format
+    ///
+    /// - Returns: Bool
+    public func isVaildURL() -> URL? {
+        if let url = URL(string: base), UIApplication.shared.canOpenURL(url)  {
+            return url
+        }
+        return nil
+    }
+    
+    /// Check if given string is a vaild Email format ( 已經加到 Aletheia )
     ///
     /// - Returns: Bool
     public func isValidEmail() -> Bool {
-        let reqularExpress = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: base)
     }

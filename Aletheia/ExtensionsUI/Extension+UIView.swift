@@ -23,22 +23,16 @@ extension AletheiaWrapper where Base == UIView {
         base.layer.add(rotation, forKey: "rotationAnimation")
     }
     
-    /// SwifterSwift: Remove all subviews in view.
+    /// Remove all subviews
     public func removeAllSubViews() {
         base.subviews.forEach({$0.removeFromSuperview()})
     }
     
-    /// Get first response ParentViewController
-    public var firstResponseViewController: UIViewController? {
-        var parentResponder: UIResponder? = base
-        while parentResponder != nil
-        {
-            parentResponder = parentResponder?.next
-            if let viewController = parentResponder as? UIViewController {
-                return viewController
-            }
-        }
-        return nil
+    /// Convert current view into UIWindows Coordinate
+    ///
+    /// - Returns: CGRect base on the UIWindows Coordinate
+    func convertToWindowCoordinate() -> CGRect {
+        return base.convert(base.bounds, to: UIApplication.shared.keyWindow)
     }
 }
 
