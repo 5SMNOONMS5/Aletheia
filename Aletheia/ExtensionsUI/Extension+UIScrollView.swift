@@ -13,12 +13,12 @@ import UIKit
 extension AletheiaWrapper where Base == UIScrollView {
     
     /// Update contentSize height while scroll view did finish layout all subviews
-    func updateContentViewHeight() {
+    public func updateContentViewHeight() {
         base.contentSize.height = base.subviews.sorted(by: { $0.frame.maxY < $1.frame.maxY }).last?.frame.maxY ?? base.contentSize.height
     }
     
     /// Update contentSize Width while scroll view did finish layout all subviews
-    func updateContentViewWidth() {
+    public func updateContentViewWidth() {
         base.contentSize.width = base.subviews.sorted(by: { $0.frame.maxX < $1.frame.maxX }).last?.frame.maxX ?? base.contentSize.width
     }
 }

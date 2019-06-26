@@ -31,7 +31,7 @@ extension AletheiaWrapper where Base == UIView {
     /// Convert current view into UIWindows Coordinate
     ///
     /// - Returns: CGRect base on the UIWindows Coordinate
-    func convertToWindowCoordinate() -> CGRect {
+    public func convertToWindowCoordinate() -> CGRect {
         return base.convert(base.bounds, to: UIApplication.shared.keyWindow)
     }
 }
