@@ -10,7 +10,7 @@
 
 import UIKit
 
-extension AletheiaWrapper where Base == UIScrollView {
+extension AletheiaWrapper where Base: UIScrollView {
     
     /// Update contentSize height while scroll view did finish layout all subviews
     public func updateContentViewHeight() {
