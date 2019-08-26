@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Foundation
 
 /// NSObject haa been conform to protocol 'AletheiaCompatible',
 /// so 'UIApplication' can benefit from it
@@ -72,4 +73,8 @@ extension AletheiaWrapper where Base == UIApplication {
         return point
     }
     
+    /// Get status bar
+    public var statusBarView: UIView? {
+        return base.value(forKey: "statusBar") as? UIView
+    }
 }

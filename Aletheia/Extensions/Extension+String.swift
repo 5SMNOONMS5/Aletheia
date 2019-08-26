@@ -11,20 +11,28 @@ import Alamofire
 extension String: AletheiaCompatibleValue { }
 extension AletheiaWrapper where Base == String {
     
-    /// 取得當前 字串的長度
+    /// 取得當前 字串的寬度
     ///
-    /// - Parameter font: 字體的大小
-    /// - Returns: 字串的長度
-    public func width(fontSize size: CGFloat) -> CGFloat {
-        return base.size(withAttributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize: size)]).width
+    /// - Parameter font: 字體
+    /// - Returns: 寬度
+    public func width(fontSize font: UIFont) -> CGFloat {
+        return base.size(withAttributes: [NSAttributedString.Key.font: font]).width
     }
     
-    /// 取得當前 字串的高度
+    /// 取得當前 字串的長度
     ///
-    /// - Parameter fontSize: 字體的大小
-    /// - Returns: 字串的長度
-    public func height(fontSize size: CGFloat) -> CGFloat {
-        return base.size(withAttributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize: size)]).height
+    /// - Parameter font: 字體
+    /// - Returns: 長度
+    public func height(fontSize font: UIFont) -> CGFloat {
+        return base.size(withAttributes: [NSAttributedString.Key.font: font]).height
+    }
+    
+    /// 取得當前 字串大小
+    ///
+    /// - Parameter font: 字體
+    /// - Returns: 大小
+    public func size(fontSize font: UIFont) -> CGSize {
+        return base.size(withAttributes: [NSAttributedString.Key.font: font])
     }
     
     /// Convert into int type

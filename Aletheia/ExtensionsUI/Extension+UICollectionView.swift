@@ -15,6 +15,4 @@ extension AletheiaWrapper where Base == UICollectionView {
     
 }
 
-extension AletheiaWrapper where Base == UICollectionView {
-    
-}
+

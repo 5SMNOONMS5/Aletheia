@@ -41,6 +41,7 @@
 		DC1782D4226C593500332B05 /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782B6226C593500332B05 /* Extension+Date.swift */; };
 		DC1782D9226C594A00332B05 /* NetworkingClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782D6226C594A00332B05 /* NetworkingClientTest.swift */; };
 		DC1782DA226C594A00332B05 /* ExtensionStringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782D8226C594A00332B05 /* ExtensionStringTest.swift */; };
+		DC1BAF6D2313FA8E00DCD6C0 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BAF6C2313FA8E00DCD6C0 /* Helper.swift */; };
 		DC613FF222C3DDBE000DD641 /* Extension+UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC613FF122C3DDBE000DD641 /* Extension+UIScrollView.swift */; };
 		DC613FFC22C3E189000DD641 /* Extension+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC613FFB22C3E189000DD641 /* Extension+UICollectionView.swift */; };
 		DC8B8CED227965D200A9B538 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC8B8CDA227964B900A9B538 /* Alamofire.framework */; };
@@ -144,6 +145,7 @@
 		DC1782B6226C593500332B05 /* Extension+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
 		DC1782D6226C594A00332B05 /* NetworkingClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingClientTest.swift; sourceTree = "<group>"; };
 		DC1782D8226C594A00332B05 /* ExtensionStringTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionStringTest.swift; sourceTree = "<group>"; };
+		DC1BAF6C2313FA8E00DCD6C0 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		DC613FF122C3DDBE000DD641 /* Extension+UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIScrollView.swift"; sourceTree = "<group>"; };
 		DC613FFB22C3E189000DD641 /* Extension+UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UICollectionView.swift"; sourceTree = "<group>"; };
 		DC8B8CCE227964B900A9B538 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 				DC1782A2226C593500332B05 /* Print.swift */,
 				DC1782A3226C593500332B05 /* Screen.swift */,
 				DC1782A4226C593500332B05 /* Systems.swift */,
+				DC1BAF6C2313FA8E00DCD6C0 /* Helper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -515,6 +518,7 @@
 				DC1782BE226C593500332B05 /* Extension+UIView.swift in Sources */,
 				DC1782C5226C593500332B05 /* Aletheia.swift in Sources */,
 				DC1782C6226C593500332B05 /* Extension+Double.swift in Sources */,
+				DC1BAF6D2313FA8E00DCD6C0 /* Helper.swift in Sources */,
 				DC1782D0226C593500332B05 /* Extension+Int.swift in Sources */,
 				DC1782C3226C593500332B05 /* Screen.swift in Sources */,
 				DC1782D4226C593500332B05 /* Extension+Date.swift in Sources */,
