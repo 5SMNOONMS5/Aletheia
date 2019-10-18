@@ -11,10 +11,12 @@ import Aletheia
 
 class NetworkingClientPutTest: XCTestCase, Networkable {
     
+    var printable: Bool = true
+
     var parameters: [String : Any]? = nil
     
-    var baseURL: String = "https://httpbin.org/put"
-    
+    var baseURL: String = "https://github.com/Alamofire/Alamofire/issues/157"
+        
     var networkClient: NetworkClient = NetworkClient()
     
     func start(completion: @escaping Response) {
@@ -22,15 +24,14 @@ class NetworkingClientPutTest: XCTestCase, Networkable {
         networkClient.performRequest(self) { (response) in
             if let data = response.value as? Data,
                 let object = self.parseJSON(data: data) {
-                
-                print(object)
-//                XCTAssertNotNil(object.origin)
-//                XCTAssertNotNil(object.url)
+                XCTAssertNotNil(object.origin)
+                XCTAssertNotNil(object.url)
             } else {
                 fatalError("Parse error")
             }
             expectation.fulfill()
         }
+        wait(for: [expectation], timeout: 30.0)
     }
     
     func testRequest() {
@@ -40,10 +41,8 @@ class NetworkingClientPutTest: XCTestCase, Networkable {
     }
 }
 
-extension NetworkingClientPutTest: JSONDecodablePeorocol {
-    
-    typealias ResponseStruct = HttpbinPut?
-    
+extension NetworkingClientPutTest {
+        
     func parseJSON(data: Data) -> HttpbinPut? {
         return data.al.jsonType(type: HttpbinPut.self)
     }

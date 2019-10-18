@@ -12,6 +12,8 @@ import Alamofire
 
 class NetworkingClientTest: XCTestCase, Networkable {
     
+    var printable: Bool = true
+    
     var parameters: [String : Any]? = [:]
     
     var method: HTTPMethod = HTTPMethod.get
@@ -33,7 +35,7 @@ class NetworkingClientTest: XCTestCase, Networkable {
             }
             expectation.fulfill()
         }
-        wait(for: [expectation], timeout: 10.0)
+        wait(for: [expectation], timeout: 30.0)
     }
     
     func testRequest() {
@@ -43,10 +45,8 @@ class NetworkingClientTest: XCTestCase, Networkable {
     }
 }
 
-extension NetworkingClientTest: JSONDecodablePeorocol {
-    
-    typealias ResponseStruct = Httpbin?
-    
+extension NetworkingClientTest {
+        
     func parseJSON(data: Data) -> Httpbin? {
         return data.al.jsonType(type: Httpbin.self)
     }

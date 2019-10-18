@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A277C7E42359CB930090EBC7 /* NetworkingClientPostTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A277C7E22359CB930090EBC7 /* NetworkingClientPostTest.swift */; };
+		A277C7E52359CB930090EBC7 /* NetworkingClientPutTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A277C7E32359CB930090EBC7 /* NetworkingClientPutTest.swift */; };
 		DC178284226C58F900332B05 /* Aletheia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC17827A226C58F900332B05 /* Aletheia.framework */; };
 		DC178289226C58F900332B05 /* AletheiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC178288226C58F900332B05 /* AletheiaTests.swift */; };
 		DC17828B226C58F900332B05 /* Aletheia.h in Headers */ = {isa = PBXBuildFile; fileRef = DC17827D226C58F900332B05 /* Aletheia.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,7 +41,7 @@
 		DC1782D2226C593500332B05 /* Extension+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782B4226C593500332B05 /* Extension+Data.swift */; };
 		DC1782D3226C593500332B05 /* Extension+Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782B5226C593500332B05 /* Extension+Character.swift */; };
 		DC1782D4226C593500332B05 /* Extension+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782B6226C593500332B05 /* Extension+Date.swift */; };
-		DC1782D9226C594A00332B05 /* NetworkingClientTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782D6226C594A00332B05 /* NetworkingClientTest.swift */; };
+		DC1782D9226C594A00332B05 /* NetworkingClientGetTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782D6226C594A00332B05 /* NetworkingClientGetTest.swift */; };
 		DC1782DA226C594A00332B05 /* ExtensionStringTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1782D8226C594A00332B05 /* ExtensionStringTest.swift */; };
 		DC1BAF6D2313FA8E00DCD6C0 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1BAF6C2313FA8E00DCD6C0 /* Helper.swift */; };
 		DC613FF222C3DDBE000DD641 /* Extension+UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC613FF122C3DDBE000DD641 /* Extension+UIScrollView.swift */; };
@@ -108,6 +110,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A277C7E22359CB930090EBC7 /* NetworkingClientPostTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingClientPostTest.swift; sourceTree = "<group>"; };
+		A277C7E32359CB930090EBC7 /* NetworkingClientPutTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingClientPutTest.swift; sourceTree = "<group>"; };
 		DC17827A226C58F900332B05 /* Aletheia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Aletheia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC17827D226C58F900332B05 /* Aletheia.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Aletheia.h; sourceTree = "<group>"; };
 		DC17827E226C58F900332B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -143,7 +147,7 @@
 		DC1782B4226C593500332B05 /* Extension+Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Data.swift"; sourceTree = "<group>"; };
 		DC1782B5226C593500332B05 /* Extension+Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Character.swift"; sourceTree = "<group>"; };
 		DC1782B6226C593500332B05 /* Extension+Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extension+Date.swift"; sourceTree = "<group>"; };
-		DC1782D6226C594A00332B05 /* NetworkingClientTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingClientTest.swift; sourceTree = "<group>"; };
+		DC1782D6226C594A00332B05 /* NetworkingClientGetTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkingClientGetTest.swift; sourceTree = "<group>"; };
 		DC1782D8226C594A00332B05 /* ExtensionStringTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionStringTest.swift; sourceTree = "<group>"; };
 		DC1BAF6C2313FA8E00DCD6C0 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		DC613FF122C3DDBE000DD641 /* Extension+UIScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIScrollView.swift"; sourceTree = "<group>"; };
@@ -288,7 +292,9 @@
 		DC1782D5226C594A00332B05 /* NetworkingTest */ = {
 			isa = PBXGroup;
 			children = (
-				DC1782D6226C594A00332B05 /* NetworkingClientTest.swift */,
+				DC1782D6226C594A00332B05 /* NetworkingClientGetTest.swift */,
+				A277C7E22359CB930090EBC7 /* NetworkingClientPostTest.swift */,
+				A277C7E32359CB930090EBC7 /* NetworkingClientPutTest.swift */,
 			);
 			path = NetworkingTest;
 			sourceTree = "<group>";
@@ -550,9 +556,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC1782D9226C594A00332B05 /* NetworkingClientTest.swift in Sources */,
+				DC1782D9226C594A00332B05 /* NetworkingClientGetTest.swift in Sources */,
+				A277C7E52359CB930090EBC7 /* NetworkingClientPutTest.swift in Sources */,
 				DC1782DA226C594A00332B05 /* ExtensionStringTest.swift in Sources */,
 				DC178289226C58F900332B05 /* AletheiaTests.swift in Sources */,
+				A277C7E42359CB930090EBC7 /* NetworkingClientPostTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

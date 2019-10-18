@@ -9,7 +9,7 @@ import UIKit
 
 /// NSObject haa been conform to protocol 'AletheiaCompatible',
 /// so 'Data' can benefit from it
-extension AletheiaWrapper: JSONConvertibleProtocol where Base == Data {
+extension AletheiaWrapper where Base == Data {
     
     /// decode data into given object that confrims to Decodable
     ///
@@ -30,4 +30,3 @@ extension AletheiaWrapper: JSONConvertibleProtocol where Base == Data {
         return result
     }
 }
-

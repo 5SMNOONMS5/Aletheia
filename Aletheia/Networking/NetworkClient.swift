@@ -19,18 +19,17 @@ public protocol NetworkClientProtocol {
 
 public struct NetworkClient: NetworkClientProtocol {
 
-//    var sessionManager: SessionManager?
+    var sessionManager: SessionManager?
     
     /// cf. https://github.com/Alamofire/Alamofire/issues/157
     ///
     /// - Parameter timeoutInterval: default is 60 seconds
-    public init(timeoutInterval: TimeInterval = 60) {
-        /// FIXME: 之後要加回去，遇到 http 等於 999 問題
-    
-//        let configuration = URLSessionConfiguration.default
-//        configuration.timeoutIntervalForRequest = timeoutInterval
-//        configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
-//        self.sessionManager = SessionManager(configuration: configuration)
+    public init(timeoutInterval: TimeInterval = 1) {
+        let configuration = URLSessionConfiguration.default
+        configuration.timeoutIntervalForRequest = timeoutInterval
+        configuration.timeoutIntervalForResource = 10
+        configuration.requestCachePolicy = .reloadIgnoringLocalCacheData
+        self.sessionManager = SessionManager(configuration: configuration)
     }
     
     /// 對网络請求
@@ -67,5 +66,9 @@ public struct NetworkClient: NetworkClientProtocol {
                 callback(Result.failure(error))
             }
         })
+    }
+    
+    public func cancelRequest() {
+        
     }
 }

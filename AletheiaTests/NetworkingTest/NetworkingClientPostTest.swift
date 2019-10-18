@@ -12,6 +12,8 @@ import Alamofire
 
 class NetworkingClientPostTest: XCTestCase, Networkable {
     
+    var printable: Bool = true
+    
     var parameters: [String : Any]? = [:]
     
     var baseURL: String = "https://httpbin.org/get"
@@ -42,10 +44,8 @@ class NetworkingClientPostTest: XCTestCase, Networkable {
     }
 }
 
-extension NetworkingClientPostTest: JSONDecodablePeorocol {
-    
-    typealias ResponseStruct = HttpbinPost?
-    
+extension NetworkingClientPostTest {
+        
     func parseJSON(data: Data) -> HttpbinPost? {
         return data.al.jsonType(type: HttpbinPost.self)
     }
@@ -81,7 +81,6 @@ struct HttpbinPost: Codable {
     struct Container: Codable {
         var Accept: String
         var Host: String
-//        var Accept_Encoding: String
     }
     
     var headers: Container
