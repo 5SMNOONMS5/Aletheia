@@ -23,6 +23,8 @@ public protocol NetworkRequestProtocol {
     var header: [String : String] { get }
     
     var networkClient: NetworkClient { get set }
+    
+    var printable: Bool { get set }
 }
 
 public extension NetworkRequestProtocol {
@@ -40,6 +42,8 @@ public extension NetworkRequestProtocol {
     var parameters: [String : Any] { return [:] }
     
     var header: [String : String] { return [:] }
+    
+    var printable: Bool { return false }
 }
 
 public protocol Networkable: NetworkRequestProtocol {

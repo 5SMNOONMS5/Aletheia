@@ -42,8 +42,8 @@ public struct NetworkClient: NetworkClientProtocol {
     
         let requestURL = request.baseURL
         
-        ALPrint(msg: "開始對 \(requestURL) 進行請求")
-        
+        if request.printable { ALPrint(msg: "開始對 \(requestURL) 進行請求") }
+                
         Alamofire.request(requestURL,
                                      method: request.method,
                                      parameters: request.parameters,
@@ -55,12 +55,14 @@ public struct NetworkClient: NetworkClientProtocol {
             switch (response.result) {
             case .success:
                 
-                ALPrint(msg: "請求 \(requestURL) 的回傳狀態：\(response.result.description)")
+                if request.printable { ALPrint(msg: "請求 \(requestURL) 的回傳狀態：\(response.result.description)") }
                 callback(Result.success(response.data))
                 
             case .failure(let error):
                 
-                ALPrint(msg: "請求 \(requestURL) 的回傳狀態：\(response.result.description) 原因是 \(error.localizedDescription)。", type: .negative)
+                if request.printable {
+                    ALPrint(msg: "請求 \(requestURL) 的回傳狀態：\(response.result.description) 原因是 \(error.localizedDescription)。", type: .negative)
+                }
                 
                 callback(Result.failure(error))
             }
