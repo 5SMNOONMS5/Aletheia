@@ -24,7 +24,8 @@ public protocol NetworkRequestProtocol {
     
     var networkClient: NetworkClient { get set }
     
-    var printable: Bool { get set }
+    /// print network process, default is false
+    var printable: Bool { get }
 }
 
 public extension NetworkRequestProtocol {
