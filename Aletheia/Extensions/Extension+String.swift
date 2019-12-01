@@ -77,6 +77,26 @@ extension AletheiaWrapper where Base == String {
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: base)
     }
+    
+    /// Base 64 encode
+    ///
+    /// - Returns: String?
+    public func base64Encoded() -> String? {
+        if let data = self.data(using: .utf8) {
+            return data.base64EncodedString()
+        }
+        return nil
+    }
+
+    /// Base 64 decode
+    ///
+    /// - Returns: String?
+    public func base64Decoded() -> String? {
+        if let data = Data(base64Encoded: self, options: .ignoreUnknownCharacters) {
+            return String(data: data, encoding: .utf8)
+        }
+        return nil
+    }
 }
 
 
