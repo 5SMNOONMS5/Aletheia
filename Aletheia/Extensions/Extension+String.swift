@@ -92,10 +92,8 @@ extension AletheiaWrapper where Base == String {
     ///
     /// - Returns: String?
     public func base64Decoded() -> String? {
-        if let data = Data(base64Encoded: self, options: .ignoreUnknownCharacters) {
-            return String(data: data, encoding: .utf8)
-        }
-        return nil
+        guard let data = Data(base64Encoded: base) else { return nil }
+        return String(data: data, encoding: .utf8)
     }
 }
 
