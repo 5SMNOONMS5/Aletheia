@@ -6,7 +6,7 @@
 //  Copyright © 2019 stephenchen. All rights reserved.
 //
 
-func ifLet<T, U>(value: T?,
+public func ifLet<T, U>(value: T?,
                  success thenFunc: (T) -> (U),
                  fail elseFunc: () -> (U)) -> U {
     switch value {
