@@ -29,25 +29,37 @@ extension AletheiaWrapper where Base == URL {
         return param?.value
     }
     
-    /// Add parameter after URL components
+    /// Appending query string
     ///
-    /// If the key is **AAAA** and value is **1111**, URL **http://www.google.com** will become **http://www.google.com?AAAA=1111**. If the URL is **http://www.google.com?BBBB=2222**, then will generate as **http://www.google.com?BBBB=2222&AAAA=1111**
+    /// *** Example
+    ///
+    /// var url = URL(string: "https://www.example.com")
+    /// let finalURL = url?.appending("key1", value: "123")
+    ///                    .appending("key2", value: nil)
+    ///
+    /// ***
     ///
     /// - Parameters:
-    ///   - aURL: a URL for add
-    ///   - key: the key of the components
-    ///   - value: the value of the components
-    /// - Returns: a URL after shaped
-    public func addQueryItem(aURL: String?, key: String, value: String?) -> String? {
-        
-        guard let aURL = aURL else { return nil }
-        guard let value = value else { return aURL }
-        
-        let query = URLComponents(string: aURL)?.queryItems?.count
-        
-        return (query == nil) || (query == 0)
-            ? aURL + "?" + key + "=" + value
-            : aURL + "&" + key + "=" + value
-    }
+    ///   - key: Key
+    ///   - value: Value
+    public func appending(_ key: String, value: String?) -> URL? {
+
+         guard var urlComponents = URLComponents(string: base.absoluteString) else { return base.absoluteURL }
+
+         // Create array of existing query items
+         var queryItems: [URLQueryItem] = urlComponents.queryItems ??  []
+
+         // Create query item
+         let queryItem = URLQueryItem(name: key, value: value)
+
+         // Append the new query item in the existing query items array
+         queryItems.append(queryItem)
+
+         // Append updated query items array in the url component object
+         urlComponents.queryItems = queryItems
+
+         // Returns the url from new url components
+         return urlComponents.url
+     }
 
 }
