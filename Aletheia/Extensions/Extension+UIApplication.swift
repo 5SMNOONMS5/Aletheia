@@ -77,4 +77,29 @@ extension AletheiaWrapper where Base == UIApplication {
     public var statusBarView: UIView? {
         return base.value(forKey: "statusBar") as? UIView
     }
+    
+    /// Get status bar
+    public var statusBarUIView: UIView? {
+        if #available(iOS 13.0, *) {
+            let tag = 38482458385
+            
+            if let statusBar = base.keyWindow?.viewWithTag(tag) {
+                return statusBar
+            } else {
+                let statusBarView = UIView(frame: UIApplication.shared.statusBarFrame)
+                statusBarView.tag = tag
+
+                base.keyWindow?.addSubview(statusBarView)
+                return statusBarView
+            }
+        } else {
+            let statusBar = "statusBar"
+            if base.responds(to: Selector((statusBar))) {
+                return base.value(forKey: statusBar) as? UIView
+            }
+        }
+        return nil
+    }
+    
+
 }

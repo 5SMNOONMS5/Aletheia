@@ -95,6 +95,27 @@ extension AletheiaWrapper where Base == String {
         guard let data = Data(base64Encoded: base) else { return nil }
         return String(data: data, encoding: .utf8)
     }
+    
+    /// Convert html to attributed string
+    public var htmlToAttributedString: NSAttributedString? {
+        guard
+            let data = base.data(using: .utf8)
+            else { return nil }
+        do {
+            return try NSAttributedString(data: data, options: [
+                NSAttributedString.DocumentReadingOptionKey.documentType: NSAttributedString.DocumentType.html,
+                NSAttributedString.DocumentReadingOptionKey.characterEncoding: String.Encoding.utf8.rawValue
+                ], documentAttributes: nil)
+        } catch let error as NSError {
+            print(error.localizedDescription)
+            return  nil
+        }
+    }
+    
+    /// Html string
+    public var htmlToString: String {
+        return htmlToAttributedString?.string ?? ""
+    }
 }
 
 
