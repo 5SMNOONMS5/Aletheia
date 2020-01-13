@@ -81,8 +81,7 @@ extension AletheiaWrapper where Base == UIApplication {
     /// Get status bar
     public var statusBarUIView: UIView? {
         if #available(iOS 13.0, *) {
-            let tag = 38482458385
-            
+            let tag = 1231415
             if let statusBar = base.keyWindow?.viewWithTag(tag) {
                 return statusBar
             } else {
