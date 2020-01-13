@@ -27,4 +27,14 @@ public struct ALSystems {
     /// App 的 BundleIdentifier
     public static let appBundleIdentifier: String = Bundle.main.bundleIdentifier ?? "No Identifier"
     
+    /// An alphanumeric string that uniquely identifies a device to the app’s vendor.
+    public static let deviceID: String? = UIDevice.current.identifierForVendor?.uuidString
+   
+    /// Open application setting page
+    public static func openSetting() -> Void {
+        if let aUrl = URL(string: UIApplication.openSettingsURLString) {
+            UIApplication.shared.open(aUrl, options: [:], completionHandler: nil)
+        }
+    }
 }
+
