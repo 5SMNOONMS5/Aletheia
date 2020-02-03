@@ -79,6 +79,9 @@ public struct ALScreen {
     /// Tool Bar 的高度
     public static let toolbar : CGFloat = 44.0
     
+    /// iPhone 的 notch 高度
+    public static let notchHeight: CGFloat = UIApplication.shared.keyWindow?.safeAreaInsets.top ?? 0
+
     /// The width of saft-area
     public static var saftAreaContentWidth: CGFloat {
         if #available(iOS 11.0, *) {
