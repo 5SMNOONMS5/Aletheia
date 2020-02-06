@@ -19,13 +19,13 @@ public struct ALSystems {
     }
     
     /// App 當前的版本
-    public static let appVersion: String? = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
+    public static let appVersion: String? = getValueFromPlist(key: "CFBundleShortVersionString") as? String
     
     /// App Build 的版號
-    public static let appBuildNumber: String? = Bundle.main.object(forInfoDictionaryKey: "CFBundleVersion") as? String
+    public static let appBuildNumber: String? = getValueFromPlist(key: "CFBundleVersion") as? String
     
     /// App 的 BundleIdentifier
-    public static let appBundleIdentifier: String = Bundle.main.bundleIdentifier ?? "No Identifier"
+    public static let appBundleID: String? = Bundle.main.bundleIdentifier
     
     /// An alphanumeric string that uniquely identifies a device to the app’s vendor.
     public static let deviceID: String? = UIDevice.current.identifierForVendor?.uuidString

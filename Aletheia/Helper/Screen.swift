@@ -33,7 +33,6 @@ public struct ALScreen {
             = UIDevice.current.userInterfaceIdiom == .pad && maxLength == 1024.0
     }
     
-    
     /// 取得當前轉向 nice to meet chris
     public static var orientation: UIInterfaceOrientation {
         return UIApplication.shared.statusBarOrientation
@@ -80,7 +79,12 @@ public struct ALScreen {
     public static let toolbar : CGFloat = 44.0
     
     /// iPhone 的 notch 高度
+    @available(iOS 11.0, *)
     public static let notchHeight: CGFloat = UIApplication.shared.keyWindow?.safeAreaInsets.top ?? 0
+    
+    /// Is this device has notch or not
+    @available(iOS 11.0, *)
+    public static let hasNotch: Bool = (notchHeight != 0)
 
     /// The width of saft-area
     public static var saftAreaContentWidth: CGFloat {
@@ -98,5 +102,14 @@ public struct ALScreen {
     /// The height of saft area
     public static var saftAreaContentHeight: CGFloat {
         return self.height
+    }
+    
+    /// The height of status bar
+    static var statusBarFrame: CGRect {
+        if #available(iOS 13.0, *) {
+            return UIApplication.shared.keyWindow?.windowScene?.statusBarManager?.statusBarFrame ?? CGRect()
+        } else {
+            return UIApplication.shared.statusBarFrame
+        }
     }
 }
