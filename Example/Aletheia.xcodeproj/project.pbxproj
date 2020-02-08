@@ -31,7 +31,7 @@
 		4C1E44951546C43CA806E9B6 /* Pods_Aletheia_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aletheia_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		53DAA66083C4020E846F8167 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		5A3AED5C967E3B5D91ED0B96 /* Pods-Aletheia_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aletheia_Example.debug.xcconfig"; path = "Target Support Files/Pods-Aletheia_Example/Pods-Aletheia_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		607FACD01AFB9204008FA782 /* Aletheia_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aletheia_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		607FACD01AFB9204008FA782 /* Aletheia iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Aletheia iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +47,7 @@
 		ACC379E1B83EDC402BA9E415 /* Pods_Aletheia_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aletheia_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACE3D4A793FF92E374F3E714 /* Pods-Aletheia_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aletheia_Example.release.xcconfig"; path = "Target Support Files/Pods-Aletheia_Example/Pods-Aletheia_Example.release.xcconfig"; sourceTree = "<group>"; };
 		D4151F9A0017A9E16F612A76 /* Aletheia.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Aletheia.podspec; path = ../Aletheia.podspec; sourceTree = "<group>"; };
+		DCF7F76C23EF407500A5E759 /* Aletheia_Example copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Aletheia_Example copy-Info.plist"; path = "/Users/stephen/Desktop/iOS/Aletheia/Example/Aletheia_Example copy-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,13 +88,14 @@
 				607FACD11AFB9204008FA782 /* Products */,
 				A46FFCB410943B39E519831C /* Pods */,
 				22DE6C3B861B7FC4F240E7FC /* Frameworks */,
+				DCF7F76C23EF407500A5E759 /* Aletheia_Example copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		607FACD11AFB9204008FA782 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				607FACD01AFB9204008FA782 /* Aletheia_Example.app */,
+				607FACD01AFB9204008FA782 /* Aletheia iOS.app */,
 				607FACE51AFB9204008FA782 /* Aletheia_Tests.xctest */,
 			);
 			name = Products;
@@ -162,9 +164,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		607FACCF1AFB9204008FA782 /* Aletheia_Example */ = {
+		607FACCF1AFB9204008FA782 /* Aletheia iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Aletheia_Example" */;
+			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Aletheia iOS" */;
 			buildPhases = (
 				426FB8EEA07A8FDC20B09535 /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
@@ -176,9 +178,9 @@
 			);
 			dependencies = (
 			);
-			name = Aletheia_Example;
+			name = "Aletheia iOS";
 			productName = Aletheia;
-			productReference = 607FACD01AFB9204008FA782 /* Aletheia_Example.app */;
+			productReference = 607FACD01AFB9204008FA782 /* Aletheia iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		607FACE41AFB9204008FA782 /* Aletheia_Tests */ = {
@@ -236,7 +238,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				607FACCF1AFB9204008FA782 /* Aletheia_Example */,
+				607FACCF1AFB9204008FA782 /* Aletheia iOS */,
 				607FACE41AFB9204008FA782 /* Aletheia_Tests */,
 			);
 		};
@@ -292,16 +294,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Aletheia_Tests/Pods-Aletheia_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
 				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,7 +378,7 @@
 /* Begin PBXTargetDependency section */
 		607FACE71AFB9204008FA782 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 607FACCF1AFB9204008FA782 /* Aletheia_Example */;
+			target = 607FACCF1AFB9204008FA782 /* Aletheia iOS */;
 			targetProxy = 607FACE61AFB9204008FA782 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -596,7 +594,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Aletheia_Example" */ = {
+		607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "Aletheia iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				607FACF01AFB9204008FA782 /* Debug */,

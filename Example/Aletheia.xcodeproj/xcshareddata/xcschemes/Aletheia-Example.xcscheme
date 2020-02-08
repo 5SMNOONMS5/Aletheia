@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-               BuildableName = "Aletheia_Example.app"
-               BlueprintName = "Aletheia_Example"
+               BuildableName = "Aletheia iOS.app"
+               BlueprintName = "Aletheia iOS"
                ReferencedContainer = "container:Aletheia.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,8 +45,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "Aletheia_Example.app"
-            BlueprintName = "Aletheia_Example"
+            BuildableName = "Aletheia iOS.app"
+            BlueprintName = "Aletheia iOS"
             ReferencedContainer = "container:Aletheia.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -78,8 +78,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "Aletheia_Example.app"
-            BlueprintName = "Aletheia_Example"
+            BuildableName = "Aletheia iOS.app"
+            BlueprintName = "Aletheia iOS"
             ReferencedContainer = "container:Aletheia.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -95,8 +95,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "607FACCF1AFB9204008FA782"
-            BuildableName = "Aletheia_Example.app"
-            BlueprintName = "Aletheia_Example"
+            BuildableName = "Aletheia iOS.app"
+            BlueprintName = "Aletheia iOS"
             ReferencedContainer = "container:Aletheia.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
