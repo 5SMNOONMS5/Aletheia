@@ -1,15 +1,29 @@
+# Aletheia
 
-Swift Netwotk Wrapper framework
+[![CI Status](https://img.shields.io/travis/chen stephen/Aletheia.svg?style=flat)](https://travis-ci.org/chen stephen/Aletheia)
+[![Version](https://img.shields.io/cocoapods/v/Aletheia.svg?style=flat)](https://cocoapods.org/pods/Aletheia)
+[![License](https://img.shields.io/cocoapods/l/Aletheia.svg?style=flat)](https://cocoapods.org/pods/Aletheia)
+[![Platform](https://img.shields.io/cocoapods/p/Aletheia.svg?style=flat)](https://cocoapods.org/pods/Aletheia)
 
-# Install 
+## Example
 
-### Carthage
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-[ First time to Carthage? check this out](https://github.com/Carthage/Carthage)
+## Requirements
 
-```bash
-git "git@github.com:5SMNOONMS5/Aletheia.git" "lastest dev commit sha"
+## Installation
 
-github "onevcat/Kingfisher" == 4.10.0
-github "Alamofire/Alamofire" == 4.8.0
+Aletheia is available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'Aletheia'
 ```
+
+## Author
+
+chen stephen, twstephen.shinepeaks@gmail.com
+
+## License
+
+Aletheia is available under the MIT license. See the LICENSE file for more info.
