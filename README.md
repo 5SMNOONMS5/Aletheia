@@ -22,7 +22,7 @@ pod 'Aletheia'
 
 ## Author
 
-chen stephen, twstephen.shinepeaks@gmail.com
+chen stephen, tasb00429@gmail.com
 
 ## License
 
