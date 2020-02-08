@@ -9,7 +9,7 @@
 import UIKit
 
 extension CALayer: AletheiaCompatibleValue { }
-extension AletheiaWrapper where Base == CALayer {
+extension AletheiaWrapper where Base: CALayer {
     
     /// Add borders with given array
     ///

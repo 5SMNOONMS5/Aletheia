@@ -9,7 +9,7 @@ import UIKit
 
 /// UIView haa been conform to protocol 'AletheiaCompatible',
 /// so 'UITableView' can benefit from it
-extension AletheiaWrapper where Base == UITableView {
+extension AletheiaWrapper where Base: UITableView {
 
     public func register<T: UITableViewCell>(_: T.Type) {
         base.register(T.self, forCellReuseIdentifier: String(describing: T.self))

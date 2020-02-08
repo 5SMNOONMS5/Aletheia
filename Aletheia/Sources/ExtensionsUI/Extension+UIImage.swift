@@ -9,7 +9,7 @@ import UIKit
 
 /// NSObject haa been conform to protocol 'AletheiaCompatible',
 /// so 'UIImage' can benefit from it
-extension AletheiaWrapper where Base == UIImage {
+extension AletheiaWrapper where Base: UIImage {
     
     /// 高效能的設置圓角
     ///

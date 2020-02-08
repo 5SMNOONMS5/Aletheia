@@ -10,7 +10,7 @@ import UIKit
 
 /// NSObject haa been conform to protocol 'AletheiaCompatible',
 /// so 'UIViewController' can benefit from it
-extension AletheiaWrapper where Base == UIViewController {
+extension AletheiaWrapper where Base: UIViewController {
 
     /// Remove child view controller from parent view controller
     public func removeFromParentViewController() {

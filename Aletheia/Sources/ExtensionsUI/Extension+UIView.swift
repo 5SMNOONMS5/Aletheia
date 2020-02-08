@@ -10,7 +10,7 @@
 
 import UIKit
 
-extension AletheiaWrapper where Base == UIView {
+extension AletheiaWrapper where Base: UIView {
     
     /// Infinitly rotate
     public func rotateInfinitly() {
