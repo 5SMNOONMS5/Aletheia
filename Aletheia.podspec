@@ -32,7 +32,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/5SMNOONMS5/Aletheia.git', :tag => s.version.to_s }
   s.ios.deployment_target = '10.0'
   s.cocoapods_version = '>= 1.4.0'
-  s.default_subspec = "Core"
+  s.default_subspec = 'Core'
+  s.swift_versions = '4.2'
 
   s.source_files = 'Aletheia/Classes/**/*'
   
@@ -46,11 +47,11 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
 
-  s.subspec "Core" do |ss|
-    ss.source_files  = "Aletheia/Classes/", "Aletheia/Classes/Plugins/"
+  s.subspec 'Core' do |ss|
+    ss.source_files  = 'Aletheia/Classes/', 'Aletheia/Classes/Plugins/'
     ss.dependency 'Alamofire', '4.8.0'
     ss.dependency 'Kingfisher', '4.10.0'
     ss.dependency 'Log'
-    ss.framework  = "Foundation"
+    ss.framework  = 'Foundation'
   end
 end
