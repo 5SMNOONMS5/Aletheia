@@ -5,7 +5,7 @@
 //  Copyright © 2018 stephenchen. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 /// Provide offen usage relevant system functions
 public struct ALSystems {
