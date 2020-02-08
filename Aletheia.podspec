@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Aletheia'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A bunch of helper code for swift projcect include network, log, and cache layer.'
 
 # This description is used to generate tags and improve search results.
