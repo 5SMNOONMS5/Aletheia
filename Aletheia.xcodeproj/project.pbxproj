@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DCF7F8D323EF5A2F00A5E759 /* Aletheia_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF7F8C923EF5A2F00A5E759 /* Aletheia_iOS.framework */; };
+		DCF7F8D323EF5A2F00A5E759 /* Aletheia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF7F8C923EF5A2F00A5E759 /* Aletheia.framework */; };
 		DCF7F8D823EF5A2F00A5E759 /* AletheiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7F8D723EF5A2F00A5E759 /* AletheiaTests.swift */; };
 		DCF7F8DA23EF5A2F00A5E759 /* Aletheia.h in Headers */ = {isa = PBXBuildFile; fileRef = DCF7F8CC23EF5A2F00A5E759 /* Aletheia.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DCF7F90523EF5A4000A5E759 /* Aletheia.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7F8E523EF5A4000A5E759 /* Aletheia.swift */; };
@@ -62,7 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DCF7F8C923EF5A2F00A5E759 /* Aletheia_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Aletheia_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCF7F8C923EF5A2F00A5E759 /* Aletheia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Aletheia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF7F8CC23EF5A2F00A5E759 /* Aletheia.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Aletheia.h; sourceTree = "<group>"; };
 		DCF7F8CD23EF5A2F00A5E759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCF7F8D223EF5A2F00A5E759 /* AletheiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AletheiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,7 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCF7F8D323EF5A2F00A5E759 /* Aletheia_iOS.framework in Frameworks */,
+				DCF7F8D323EF5A2F00A5E759 /* Aletheia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +154,7 @@
 		DCF7F8CA23EF5A2F00A5E759 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DCF7F8C923EF5A2F00A5E759 /* Aletheia_iOS.framework */,
+				DCF7F8C923EF5A2F00A5E759 /* Aletheia.framework */,
 				DCF7F8D223EF5A2F00A5E759 /* AletheiaTests.xctest */,
 				DCF7F93123EF5B4400A5E759 /* Example.app */,
 			);
@@ -287,9 +287,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		DCF7F8C823EF5A2F00A5E759 /* Aletheia iOS */ = {
+		DCF7F8C823EF5A2F00A5E759 /* Aletheia */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DCF7F8DD23EF5A2F00A5E759 /* Build configuration list for PBXNativeTarget "Aletheia iOS" */;
+			buildConfigurationList = DCF7F8DD23EF5A2F00A5E759 /* Build configuration list for PBXNativeTarget "Aletheia" */;
 			buildPhases = (
 				DCF7F8C423EF5A2F00A5E759 /* Headers */,
 				DCF7F8C523EF5A2F00A5E759 /* Sources */,
@@ -300,9 +300,9 @@
 			);
 			dependencies = (
 			);
-			name = "Aletheia iOS";
+			name = Aletheia;
 			productName = Aletheia;
-			productReference = DCF7F8C923EF5A2F00A5E759 /* Aletheia_iOS.framework */;
+			productReference = DCF7F8C923EF5A2F00A5E759 /* Aletheia.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DCF7F8D123EF5A2F00A5E759 /* AletheiaTests */ = {
@@ -374,7 +374,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DCF7F8C823EF5A2F00A5E759 /* Aletheia iOS */,
+				DCF7F8C823EF5A2F00A5E759 /* Aletheia */,
 				DCF7F8D123EF5A2F00A5E759 /* AletheiaTests */,
 				DCF7F93023EF5B4400A5E759 /* Example */,
 			);
@@ -469,7 +469,7 @@
 /* Begin PBXTargetDependency section */
 		DCF7F8D523EF5A2F00A5E759 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DCF7F8C823EF5A2F00A5E759 /* Aletheia iOS */;
+			target = DCF7F8C823EF5A2F00A5E759 /* Aletheia */;
 			targetProxy = DCF7F8D423EF5A2F00A5E759 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -756,7 +756,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DCF7F8DD23EF5A2F00A5E759 /* Build configuration list for PBXNativeTarget "Aletheia iOS" */ = {
+		DCF7F8DD23EF5A2F00A5E759 /* Build configuration list for PBXNativeTarget "Aletheia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DCF7F8DE23EF5A2F00A5E759 /* Debug */,
