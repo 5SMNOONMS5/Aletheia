@@ -33,7 +33,7 @@ public struct ALSystems {
     /// Open application setting page
     @available(iOS 10.0, *)
     public static func openSetting() -> Void {
-        if let aUrl = URL(string: UIApplicationOpenSettingsURLString) {
+        if let aUrl = URL(string: UIApplication.openSettingsURLString) {
             UIApplication.shared.open(aUrl, options: [:], completionHandler: nil)
         }
     }

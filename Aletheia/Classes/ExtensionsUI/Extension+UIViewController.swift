@@ -14,18 +14,18 @@ extension AletheiaWrapper where Base == UIViewController {
 
     /// Remove child view controller from parent view controller
     public func removeFromParentViewController() {
-        base.willMove(toParentViewController: nil)
+        base.willMove(toParent: nil)
         base.view.removeFromSuperview()
-        base.removeFromParentViewController()
+        base.removeFromParent()
     }
 
     /// Add new child view controller
     ///
     /// - Parameter sender: Child ViewController
     public func addChildViewController(sender: UIViewController) {
-        base.addChildViewController(sender)
+        base.addChild(sender)
         sender.view.frame = base.view.frame
         base.view.addSubview(sender.view)
-        sender.didMove(toParentViewController: base)
+        sender.didMove(toParent: base)
     }
 }
