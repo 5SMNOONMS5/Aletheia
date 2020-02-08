@@ -18,7 +18,12 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-  A bunch of helper code for swift projcect include network, log, and cache layer.
+  Helper function is always useful for any project, such as frame size, string, date convertion.
+
+  This framework is used for my porject for quick and safy develope. My goal of this project will includes network,
+
+  cache, log and some basic UI component.
+
   DESC
    
   s.homepage         = 'https://github.com/5SMNOONMS5/Aletheia'
