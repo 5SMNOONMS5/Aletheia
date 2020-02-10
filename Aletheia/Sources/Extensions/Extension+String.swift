@@ -48,10 +48,10 @@ extension AletheiaWrapper where Base == String {
         return dateFormatter.date(from: base)
     }
     
-    /// Cut decimal for those price-like strings. For example from 1000.000 to 1000
+    /// Remove decimal for price-like strings. Ex: 1000.000 to 1000
     ///
-    /// - Returns: no decimal string
-    public func withoutDecimal() -> String? {
+    /// - Returns: String
+    public func noDecimal() -> String? {
         if let subString = base.split(separator: ".").first {
             return String(subString)
         }
