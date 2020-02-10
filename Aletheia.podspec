@@ -48,7 +48,7 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
 
   s.subspec 'Core' do |ss|
-    ss.source_files  = 'Aletheia/Sources/', 'Aletheia/Sources/'
+    # ss.source_files  = 'Aletheia/Sources/', 'Aletheia/Sources/'
     ss.dependency 'Alamofire', '4.8.0'
     ss.dependency 'Kingfisher', '4.10.0'
     ss.dependency 'Log'
