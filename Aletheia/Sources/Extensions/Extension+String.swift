@@ -61,7 +61,7 @@ extension AletheiaWrapper where Base == String {
     /// Check if given string is a vaild URL format
     ///
     /// - Returns: Bool
-    public func aURLType() -> URL? {
+    public func toURL() -> URL? {
         if let aURL = URL(string: base), UIApplication.shared.canOpenURL(aURL)  {
             return aURL
         }
@@ -114,6 +114,18 @@ extension AletheiaWrapper where Base == String {
     /// HTML String
     public var toHTMLString: String {
         return toHtmlNSAttributedString?.string ?? ""
+    }
+    
+    /// To new string date format
+    ///
+    /// - Parameter format: Date string format, default is `yyyy-MM-dd`
+    public func toDateStringFormat(_ format: String = "yyyy-MM-dd") -> String? {
+        if let date = self.toDate(format: format) {
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = format
+            return dateFormatter.string(from: date)
+        }
+        return nil
     }
 }
 
