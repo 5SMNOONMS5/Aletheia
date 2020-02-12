@@ -1,13 +1,10 @@
 #!/bin/sh
 
-RED='\033[1;31m'
-GREEN='\033[1;32m'
-NC='\033[0m' # No Color
+source $PWD/Scripts/not_so_important.sh
 
 if ! cmp -s Cartfile.resolved Carthage/Cartfile.resolved; then
   printf "${RED}Dependencies out of date with cache.${NC} Bootstrapping...\n"
-  carthage bootstrap
-  scripts/bootstrap.sh
+  carthage bootstrap --platform iOS
 else
   printf "${GREEN}Cache up-to-date.${NC} Skipping bootstrap...\n"
 fi

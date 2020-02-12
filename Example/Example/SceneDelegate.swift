@@ -2,8 +2,8 @@
 //  SceneDelegate.swift
 //  Example
 //
-//  Created by stephen on 2020/2/9.
-//  Copyright © 2020 stephenchen. All rights reserved.
+//  Created by twStephen on 2020/2/12.
+//  Copyright © 2020 twStephen. All rights reserved.
 //
 
 import UIKit
@@ -46,9 +46,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
-
-        // Save changes in the application's managed object context when the application transitions to the background.
-        (UIApplication.shared.delegate as? AppDelegate)?.saveContext()
     }
 
 

@@ -39,9 +39,9 @@ extension AletheiaWrapper where Base == String {
     
     /// Convert String into Date type
     ///
-    /// - Parameter format: string format
-    /// - Returns: new date with given format
-    public func toDate(format: String) -> Date? {
+    /// - Parameter format: Date string format, default is `yyyy-MM-dd`
+    /// - Returns: new date with given formatw
+    public func toDate(format: String = "yyyy-MM-dd") -> Date? {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
         dateFormatter.timeZone = TimeZone.current

@@ -20,6 +20,9 @@ it, simply add the following line to your Podfile:
 pod 'Aletheia'
 ```
 
+## How to use
+
+
 ## Author
 
 chen stephen, tasb00429@gmail.com

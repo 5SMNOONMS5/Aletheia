@@ -1,0 +1,33 @@
+PODS:
+  - Alamofire (4.8.0)
+  - Aletheia (1.0.8):
+    - Aletheia/Core (= 1.0.8)
+  - Aletheia/Core (1.0.8):
+    - Alamofire (= 4.8.0)
+    - Kingfisher (= 4.10.0)
+    - Log
+  - Kingfisher (4.10.0)
+  - Log (2.0)
+
+DEPENDENCIES:
+  - Aletheia (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Kingfisher
+    - Log
+
+EXTERNAL SOURCES:
+  Aletheia:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  Aletheia: fff7a241dbf4fcf7e89da2282c38dfc7a7c16ad5
+  Kingfisher: 43c4b802d8b5256cf1f4379e9cd10b329be6d3e2
+  Log: 73fab10e8b88f15cef5f322b12c9be87cf19ee6e
+
+PODFILE CHECKSUM: 476c2f2f5342a8cfc3927d30437d62bf20f53317
+
+COCOAPODS: 1.8.3

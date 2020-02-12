@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1ECC63DCEEF7BE03402905A9 /* Pods_Aletheia_AletheiaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E898F883ED092B9075559EB /* Pods_Aletheia_AletheiaTests.framework */; };
 		DCF7F8D323EF5A2F00A5E759 /* Aletheia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF7F8C923EF5A2F00A5E759 /* Aletheia.framework */; };
 		DCF7F8D823EF5A2F00A5E759 /* AletheiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7F8D723EF5A2F00A5E759 /* AletheiaTests.swift */; };
 		DCF7F8DA23EF5A2F00A5E759 /* Aletheia.h in Headers */ = {isa = PBXBuildFile; fileRef = DCF7F8CC23EF5A2F00A5E759 /* Aletheia.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -42,13 +43,6 @@
 		DCF7F92623EF5B0300A5E759 /* Log.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF7F92323EF5B0300A5E759 /* Log.framework */; };
 		DCF7F92823EF5B0300A5E759 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF7F92423EF5B0300A5E759 /* Kingfisher.framework */; };
 		DCF7F92A23EF5B0300A5E759 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF7F92523EF5B0300A5E759 /* Alamofire.framework */; };
-		DCF7F93423EF5B4400A5E759 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7F93323EF5B4400A5E759 /* AppDelegate.swift */; };
-		DCF7F93623EF5B4400A5E759 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7F93523EF5B4400A5E759 /* SceneDelegate.swift */; };
-		DCF7F93823EF5B4400A5E759 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCF7F93723EF5B4400A5E759 /* ViewController.swift */; };
-		DCF7F93B23EF5B4400A5E759 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCF7F93923EF5B4400A5E759 /* Main.storyboard */; };
-		DCF7F93E23EF5B4400A5E759 /* Example.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DCF7F93C23EF5B4400A5E759 /* Example.xcdatamodeld */; };
-		DCF7F94023EF5B4500A5E759 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCF7F93F23EF5B4500A5E759 /* Assets.xcassets */; };
-		DCF7F94323EF5B4500A5E759 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCF7F94123EF5B4500A5E759 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +56,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D454E388B0EDE030163A7F5 /* Pods-Aletheia-AletheiaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aletheia-AletheiaTests.debug.xcconfig"; path = "Target Support Files/Pods-Aletheia-AletheiaTests/Pods-Aletheia-AletheiaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E898F883ED092B9075559EB /* Pods_Aletheia_AletheiaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aletheia_AletheiaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F449150F1F1C1E04DB574EE /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
+		57EB5AC0B1657D2E8CA13FB9 /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BFCCE6BAE6B5E20781B7563 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9208F410C4BB802B1B50B068 /* Pods-Aletheia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aletheia.debug.xcconfig"; path = "Target Support Files/Pods-Aletheia/Pods-Aletheia.debug.xcconfig"; sourceTree = "<group>"; };
+		B32BC89CD3243A0308CF59FD /* Pods-Aletheia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aletheia.release.xcconfig"; path = "Target Support Files/Pods-Aletheia/Pods-Aletheia.release.xcconfig"; sourceTree = "<group>"; };
+		BB72D38661BAC1779F3A03AB /* Pods-Aletheia-AletheiaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Aletheia-AletheiaTests.release.xcconfig"; path = "Target Support Files/Pods-Aletheia-AletheiaTests/Pods-Aletheia-AletheiaTests.release.xcconfig"; sourceTree = "<group>"; };
 		DCF7F8C923EF5A2F00A5E759 /* Aletheia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Aletheia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCF7F8CC23EF5A2F00A5E759 /* Aletheia.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Aletheia.h; sourceTree = "<group>"; };
 		DCF7F8CD23EF5A2F00A5E759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,15 +102,7 @@
 		DCF7F92323EF5B0300A5E759 /* Log.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Log.framework; path = Carthage/Build/iOS/Log.framework; sourceTree = "<group>"; };
 		DCF7F92423EF5B0300A5E759 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
 		DCF7F92523EF5B0300A5E759 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		DCF7F93123EF5B4400A5E759 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCF7F93323EF5B4400A5E759 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DCF7F93523EF5B4400A5E759 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DCF7F93723EF5B4400A5E759 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DCF7F93A23EF5B4400A5E759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DCF7F93D23EF5B4400A5E759 /* Example.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Example.xcdatamodel; sourceTree = "<group>"; };
-		DCF7F93F23EF5B4500A5E759 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DCF7F94223EF5B4500A5E759 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		DCF7F94423EF5B4500A5E759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7A6481B3B0AAE5094DAD094 /* Pods_Aletheia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Aletheia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,27 +121,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCF7F8D323EF5A2F00A5E759 /* Aletheia.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DCF7F92E23EF5B4400A5E759 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				1ECC63DCEEF7BE03402905A9 /* Pods_Aletheia_AletheiaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D8F2ECC616F6974D10173F9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9208F410C4BB802B1B50B068 /* Pods-Aletheia.debug.xcconfig */,
+				B32BC89CD3243A0308CF59FD /* Pods-Aletheia.release.xcconfig */,
+				2D454E388B0EDE030163A7F5 /* Pods-Aletheia-AletheiaTests.debug.xcconfig */,
+				BB72D38661BAC1779F3A03AB /* Pods-Aletheia-AletheiaTests.release.xcconfig */,
+				6BFCCE6BAE6B5E20781B7563 /* Pods-Example.debug.xcconfig */,
+				3F449150F1F1C1E04DB574EE /* Pods-Example.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DCF7F8BF23EF5A2F00A5E759 = {
 			isa = PBXGroup;
 			children = (
 				DCF7F8CB23EF5A2F00A5E759 /* Aletheia */,
 				DCF7F8D623EF5A2F00A5E759 /* AletheiaTests */,
-				DCF7F93223EF5B4400A5E759 /* Example */,
 				DCF7F8CA23EF5A2F00A5E759 /* Products */,
 				DCF7F92223EF5B0300A5E759 /* Frameworks */,
+				D8F2ECC616F6974D10173F9F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,7 +157,6 @@
 			children = (
 				DCF7F8C923EF5A2F00A5E759 /* Aletheia.framework */,
 				DCF7F8D223EF5A2F00A5E759 /* AletheiaTests.xctest */,
-				DCF7F93123EF5B4400A5E759 /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -254,23 +254,11 @@
 				DCF7F92523EF5B0300A5E759 /* Alamofire.framework */,
 				DCF7F92423EF5B0300A5E759 /* Kingfisher.framework */,
 				DCF7F92323EF5B0300A5E759 /* Log.framework */,
+				F7A6481B3B0AAE5094DAD094 /* Pods_Aletheia.framework */,
+				3E898F883ED092B9075559EB /* Pods_Aletheia_AletheiaTests.framework */,
+				57EB5AC0B1657D2E8CA13FB9 /* Pods_Example.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DCF7F93223EF5B4400A5E759 /* Example */ = {
-			isa = PBXGroup;
-			children = (
-				DCF7F93323EF5B4400A5E759 /* AppDelegate.swift */,
-				DCF7F93523EF5B4400A5E759 /* SceneDelegate.swift */,
-				DCF7F93723EF5B4400A5E759 /* ViewController.swift */,
-				DCF7F93923EF5B4400A5E759 /* Main.storyboard */,
-				DCF7F93F23EF5B4500A5E759 /* Assets.xcassets */,
-				DCF7F94123EF5B4500A5E759 /* LaunchScreen.storyboard */,
-				DCF7F94423EF5B4500A5E759 /* Info.plist */,
-				DCF7F93C23EF5B4400A5E759 /* Example.xcdatamodeld */,
-			);
-			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,6 +297,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCF7F8E023EF5A2F00A5E759 /* Build configuration list for PBXNativeTarget "AletheiaTests" */;
 			buildPhases = (
+				7F879C509EC2DA2F8AF1DC44 /* [CP] Check Pods Manifest.lock */,
 				DCF7F8CE23EF5A2F00A5E759 /* Sources */,
 				DCF7F8CF23EF5A2F00A5E759 /* Frameworks */,
 				DCF7F8D023EF5A2F00A5E759 /* Resources */,
@@ -322,23 +311,6 @@
 			productName = AletheiaTests;
 			productReference = DCF7F8D223EF5A2F00A5E759 /* AletheiaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		DCF7F93023EF5B4400A5E759 /* Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DCF7F94523EF5B4500A5E759 /* Build configuration list for PBXNativeTarget "Example" */;
-			buildPhases = (
-				DCF7F92D23EF5B4400A5E759 /* Sources */,
-				DCF7F92E23EF5B4400A5E759 /* Frameworks */,
-				DCF7F92F23EF5B4400A5E759 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Example;
-			productName = Example;
-			productReference = DCF7F93123EF5B4400A5E759 /* Example.app */;
-			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -354,9 +326,6 @@
 						CreatedOnToolsVersion = 11.3.1;
 					};
 					DCF7F8D123EF5A2F00A5E759 = {
-						CreatedOnToolsVersion = 11.3.1;
-					};
-					DCF7F93023EF5B4400A5E759 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -376,7 +345,6 @@
 			targets = (
 				DCF7F8C823EF5A2F00A5E759 /* Aletheia */,
 				DCF7F8D123EF5A2F00A5E759 /* AletheiaTests */,
-				DCF7F93023EF5B4400A5E759 /* Example */,
 			);
 		};
 /* End PBXProject section */
@@ -396,17 +364,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DCF7F92F23EF5B4400A5E759 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F879C509EC2DA2F8AF1DC44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCF7F94323EF5B4500A5E759 /* LaunchScreen.storyboard in Resources */,
-				DCF7F94023EF5B4500A5E759 /* Assets.xcassets in Resources */,
-				DCF7F93B23EF5B4400A5E759 /* Main.storyboard in Resources */,
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Aletheia-AletheiaTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DCF7F8C523EF5A2F00A5E759 /* Sources */ = {
@@ -453,17 +436,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DCF7F92D23EF5B4400A5E759 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DCF7F93E23EF5B4400A5E759 /* Example.xcdatamodeld in Sources */,
-				DCF7F93823EF5B4400A5E759 /* ViewController.swift in Sources */,
-				DCF7F93423EF5B4400A5E759 /* AppDelegate.swift in Sources */,
-				DCF7F93623EF5B4400A5E759 /* SceneDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -473,25 +445,6 @@
 			targetProxy = DCF7F8D423EF5A2F00A5E759 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		DCF7F93923EF5B4400A5E759 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DCF7F93A23EF5B4400A5E759 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DCF7F94123EF5B4500A5E759 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DCF7F94223EF5B4500A5E759 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DCF7F8DB23EF5A2F00A5E759 /* Debug */ = {
@@ -616,6 +569,7 @@
 		};
 		DCF7F8DE23EF5A2F00A5E759 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9208F410C4BB802B1B50B068 /* Pods-Aletheia.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -645,6 +599,7 @@
 		};
 		DCF7F8DF23EF5A2F00A5E759 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B32BC89CD3243A0308CF59FD /* Pods-Aletheia.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -674,6 +629,7 @@
 		};
 		DCF7F8E123EF5A2F00A5E759 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D454E388B0EDE030163A7F5 /* Pods-Aletheia-AletheiaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -693,6 +649,7 @@
 		};
 		DCF7F8E223EF5A2F00A5E759 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB72D38661BAC1779F3A03AB /* Pods-Aletheia-AletheiaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -704,42 +661,6 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephenchen.AletheiaTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		DCF7F94623EF5B4500A5E759 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NLHXHRPT3H;
-				INFOPLIST_FILE = Example/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.stephenchen.Example;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		DCF7F94723EF5B4500A5E759 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NLHXHRPT3H;
-				INFOPLIST_FILE = Example/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.stephenchen.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -776,29 +697,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DCF7F94523EF5B4500A5E759 /* Build configuration list for PBXNativeTarget "Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DCF7F94623EF5B4500A5E759 /* Debug */,
-				DCF7F94723EF5B4500A5E759 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		DCF7F93C23EF5B4400A5E759 /* Example.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				DCF7F93D23EF5B4400A5E759 /* Example.xcdatamodel */,
-			);
-			currentVersion = DCF7F93D23EF5B4400A5E759 /* Example.xcdatamodel */;
-			path = Example.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = DCF7F8C023EF5A2F00A5E759 /* Project object */;
 }
