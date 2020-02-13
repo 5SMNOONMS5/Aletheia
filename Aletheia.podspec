@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'Aletheia'
-  s.version          = '1.0.8'
+  s.version          = '1.0.9'
   s.summary          = 'A bunch of helper code for swift projcect include network, log, and cache layer.'
 
 # This description is used to generate tags and improve search results.
@@ -45,10 +45,19 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
 
   s.subspec 'Core' do |ss|
-    ss.source_files  = 'Aletheia/Sources/', 'Aletheia/Sources/'
+    ss.source_files  = 'Aletheia/Sources/General', 'Aletheia/Sources/Extensions', 'Aletheia/Sources/ExtensionsUI'
+    ss.dependency 'Log'
+    ss.framework = 'Foundation'
+  end
+
+  s.subspec "Network" do |ss|
+    ss.source_files = 'Aletheia/Sources/Networking'
+    ss.dependency "Aletheia/Core"
     ss.dependency 'Alamofire', '4.8.0'
     ss.dependency 'Kingfisher', '4.10.0'
-    ss.dependency 'Log'
-    ss.framework  = 'Foundation'
   end
+
+
+
+
 end

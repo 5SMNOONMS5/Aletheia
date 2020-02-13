@@ -9,14 +9,14 @@ import UIKit
 
 /// NSObject haa been conform to protocol 'AletheiaCompatible',
 /// so 'FileManager' can benefit from it
-extension AletheiaWrapper where Base == DispatchQueue {
+extension AletheiaWrapper where Base: DispatchQueue {
     
     /// Dealy
     ///
     /// - Parameters:
     ///   - seconds: how much time to frozen the main thread
     ///   - completion: when forzen is finish
-    static func delayMainThread(with seconds: Double,
+    static func doDelay(with seconds: Double,
                                  completion: @escaping () -> ()) {
         Base.main.asyncAfter(deadline: .now() + seconds) {
             completion()

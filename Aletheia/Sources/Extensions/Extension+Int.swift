@@ -11,9 +11,17 @@ import UIKit
 /// Int 的擴充 方法 以及 參數
 extension AletheiaWrapper where Base == Int {
     
-    /// Int to CGFloat
-    public var toCGFloat: CGFloat { return CGFloat(base) }
+    /// To CGFloat
+    ///
+    /// - Return: CGFloat
+    public var toCGFloat: CGFloat {
+        return CGFloat(base)
+    }
 
-    ///  Int to Double
-    public var toDouble: Double { return Double(base) }
+    /// To Double
+    ///
+    /// - Return: Double
+    public var toDouble: Double {
+        return Double(base)
+    }
 }

@@ -10,14 +10,13 @@ import Foundation
 extension Date: AletheiaCompatibleValue { }
 extension AletheiaWrapper where Base == Date {
     
-    /// Convert Date into String
+    /// Convert given date into given format.
     ///
-    /// - Parameter format: date format
-    /// - Returns: new string with given format
+    /// - Parameter format: date format, default is "yyyy-MM-dd HH:mm:ss"
+    /// - Return: String
     public func toString(format: String = "yyyy-MM-dd HH:mm:ss") -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
-        dateFormatter.timeZone = TimeZone.current
         return dateFormatter.string(from: base)
     }
 }

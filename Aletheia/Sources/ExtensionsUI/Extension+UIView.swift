@@ -13,7 +13,7 @@ import UIKit
 extension AletheiaWrapper where Base: UIView {
     
     /// Infinitly rotate
-    public func rotateInfinitly() {
+    public func doRotateInfinitly() {
         let rotation : CABasicAnimation =
             CABasicAnimation(keyPath: "transform.rotation.z")
         rotation.toValue = NSNumber(value: Double.pi * 2)
@@ -30,8 +30,8 @@ extension AletheiaWrapper where Base: UIView {
     
     /// Convert current view into UIWindows Coordinate
     ///
-    /// - Returns: CGRect base on the UIWindows Coordinate
-    public func convertToWindowCoordinate() -> CGRect {
+    /// - Return: CGRect base on the UIWindows Coordinate
+    public func toWindowCoordinate() -> CGRect {
         return base.convert(base.bounds, to: UIApplication.shared.keyWindow)
     }
 }

@@ -17,6 +17,4 @@ public func ifLet<T, U>(value: T?,
     }
 }
 
-
-
 extension Logger: AletheiaCompatibleValue { }

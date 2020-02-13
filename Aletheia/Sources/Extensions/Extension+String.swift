@@ -10,57 +10,58 @@ import UIKit
 extension String: AletheiaCompatibleValue { }
 extension AletheiaWrapper where Base == String {
     
-    /// 取得當前 字串的寬度
+    /// Return the width of given string with the given UIFont.
     ///
-    /// - Parameter font: 字體
-    /// - Returns: 寬度
+    /// - Parameter font: UIFont
+    /// - Return: String width
     public func width(fontSize font: UIFont) -> CGFloat {
-        return base.size(withAttributes: [NSAttributedString.Key.font: font]).width
+        return size(fontSize: font).width
     }
     
-    /// 取得當前 字串的長度
+    /// Return the height of given string with the given UIFont.
     ///
-    /// - Parameter font: 字體
-    /// - Returns: 長度
+    /// - Parameter font: UIFont
+    /// - Return: String height
     public func height(fontSize font: UIFont) -> CGFloat {
-        return base.size(withAttributes: [NSAttributedString.Key.font: font]).height
+        return size(fontSize: font).height
     }
     
-    /// 取得當前 字串大小
+    /// Return the size of given string with the given UIFont.
     ///
-    /// - Parameter font: 字體
-    /// - Returns: 大小
+    /// - Parameter font: UIFont
+    /// - Return: CGSize
     public func size(fontSize font: UIFont) -> CGSize {
         return base.size(withAttributes: [NSAttributedString.Key.font: font])
     }
     
-    /// Convert into int type
-    public var toInt: Int? { return Int(base) }
-    
-    /// Convert String into Date type
-    ///
-    /// - Parameter format: Date string format, default is `yyyy-MM-dd`
-    /// - Returns: new date with given formatw
-    public func toDate(format: String = "yyyy-MM-dd") -> Date? {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = format
-        dateFormatter.timeZone = TimeZone.current
-        return dateFormatter.date(from: base)
+    /// To int type.
+    public var toInt: Int? {
+        return Int(base)
     }
     
-    /// Remove decimal for price-like strings. Ex: 1000.000 to 1000
+    /// To base 64 encoded
     ///
-    /// - Returns: String
-    public func noDecimal() -> String? {
-        if let subString = base.split(separator: ".").first {
-            return String(subString)
+    /// - Return: String?
+    public func toBase64Encoded() -> String? {
+        if let data = base.data(using: .utf8) {
+            return data.base64EncodedString()
         }
         return nil
     }
-    
-    /// Check if given string is a vaild URL format
+
+    /// To Date type via given Date
     ///
-    /// - Returns: Bool
+    /// - Parameter format: Date string format, default is `"yyyy-MM-dd HH:mm:ss"`
+    /// - Return: Date?
+    public func toDate(format: String = "yyyy-MM-dd HH:mm:ss") -> Date? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        return dateFormatter.date(from: base)
+    }
+    
+    /// Check and then convert if given string is a vaild URL
+    ///
+    /// - Return: URL?
     public func toURL() -> URL? {
         if let aURL = URL(string: base), UIApplication.shared.canOpenURL(aURL)  {
             return aURL
@@ -68,34 +69,18 @@ extension AletheiaWrapper where Base == String {
         return nil
     }
     
-    /// Is string a valid Email format ?
+    /// Is valid e-mail format ?
     ///
-    /// - Returns: Bool
+    /// - Return: Bool
     public func isValidEmail() -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: base)
     }
     
-    /// Base 64 encode
+    /// To NSAttributed html string
     ///
-    /// - Returns: String?
-    public func base64Encoded() -> String? {
-        if let data = base.data(using: .utf8) {
-            return data.base64EncodedString()
-        }
-        return nil
-    }
-
-    /// Base 64 decode
-    ///
-    /// - Returns: String?
-    public func base64Decoded() -> String? {
-        guard let data = Data(base64Encoded: base) else { return nil }
-        return String(data: data, encoding: .utf8)
-    }
-    
-    /// To NSAttributed HTML String
+    /// - Return: NSAttributedString?
     public var toHtmlNSAttributedString: NSAttributedString? {
         guard
             let data = base.data(using: .utf8)
@@ -110,19 +95,24 @@ extension AletheiaWrapper where Base == String {
             return  nil
         }
     }
-    
-    /// HTML String
+
+    /// To html string.
+    ///
+    /// - Return: NSAttributedString?
     public var toHTMLString: String {
         return toHtmlNSAttributedString?.string ?? ""
     }
     
-    /// To new string date format
+    /// To new string date format.
     ///
-    /// - Parameter format: Date string format, default is `yyyy-MM-dd`
-    public func toDateStringFormat(_ format: String = "yyyy-MM-dd") -> String? {
-        if let date = self.toDate(format: format) {
+    /// - Parameter newFormat: Old format wants to be converted.
+    /// - Parameter oldFormat: New format will be convert.
+    ///
+    /// - Return: String?
+    public func toDateStringFormat(_ newFormat: String, oldFormat: String) -> String? {
+        if let date = self.toDate(format: oldFormat) {
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = format
+            dateFormatter.dateFormat = newFormat
             return dateFormatter.string(from: date)
         }
         return nil

@@ -18,8 +18,8 @@ extension AletheiaWrapper where Base: UIImage {
     /// - Parameters:
     ///   - radius: radius
     ///   - sizetoFit: size
-    /// - Returns: UIImage with given radius corner
-    public func drawRectWithRoundedCorner(radius: CGFloat, _ sizetoFit: CGSize) -> UIImage {
+    /// - Return: UIImage with given radius corner
+    public func doDrawRectWithRoundedCorner(radius: CGFloat, _ sizetoFit: CGSize) -> UIImage? {
         let rect = CGRect(origin: CGPoint(x: 0, y: 0), size: sizetoFit)
         
         UIGraphicsBeginImageContextWithOptions(rect.size, false, UIScreen.main.scale)
@@ -36,6 +36,6 @@ extension AletheiaWrapper where Base: UIImage {
         let output = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        return output!
+        return output
     }
 }

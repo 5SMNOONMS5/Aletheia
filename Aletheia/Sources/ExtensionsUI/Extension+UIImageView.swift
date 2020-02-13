@@ -17,8 +17,8 @@ extension AletheiaWrapper where Base: UIImageView {
     /// cf. https://bestswifter.com/efficient-rounded-corner/
     ///
     /// - Parameter radius: radius for images
-    public func addCorner(radius: CGFloat) {
+    public func doAddCorner(radius: CGFloat) {
         guard let `image` = base.image else { return }
-        base.image = `image`.al.drawRectWithRoundedCorner(radius: radius, base.bounds.size)
+        base.image = `image`.al.doDrawRectWithRoundedCorner(radius: radius, base.bounds.size)
     }
 }

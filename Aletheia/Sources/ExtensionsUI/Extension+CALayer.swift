@@ -17,7 +17,7 @@ extension AletheiaWrapper where Base: CALayer {
     ///   - edges: specific border to add
     ///   - color: current now only support one side border
     ///   - thickness: the width of border
-    public func addBorder(edges: [UIRectEdge], color: UIColor, thickness: CGFloat) {
+    public func doAddBorder(edges: [UIRectEdge], color: UIColor, thickness: CGFloat) {
         
         if edges.contains(.all) {
             base.borderWidth = thickness

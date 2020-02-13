@@ -11,26 +11,27 @@ import Foundation
 extension Data: AletheiaCompatibleValue { }
 extension AletheiaWrapper where Base == Data {
     
+    
     public func toString(encoding: String.Encoding = .utf8) -> String? {
-        return String(bytes: base, encoding: encoding)
+        return String(data: base, encoding: encoding)
     }
     
-    /// decode data into given object that confrims to Decodable
+    /// Decode data into given object that confrims to Decodable
     ///
     /// - Parameter type: Parameter T: A object confrims to Decodable
     /// - Parameter decoder: Custom decoder
     public func toJson<T: Decodable>(type: T.Type, decoder: JSONDecoder? = nil) -> T? {
         
-        var _decoder: JSONDecoder
+        var d: JSONDecoder
         
         if let decoder = decoder {
-            _decoder = decoder
+            d = decoder
         } else {
-            _decoder = JSONDecoder()
-            _decoder.keyDecodingStrategy = .convertFromSnakeCase
+            d = JSONDecoder()
+            d.keyDecodingStrategy = .convertFromSnakeCase
         }
         
-        guard let result = try? _decoder.decode(T.self, from: base) else { return nil }
+        guard let result = try? d.decode(T.self, from: base) else { return nil }
         return result
     }
 }

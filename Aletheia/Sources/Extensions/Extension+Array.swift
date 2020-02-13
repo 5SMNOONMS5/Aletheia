@@ -10,19 +10,14 @@ import Foundation
 extension Array: AletheiaCompatibleValue { }
 extension AletheiaWrapper where Base == Array<Any> {
 	
-    /// Shuffle
-    public var shuffle: [Any] {
-
+    public var doShuffle: [Any] {
         var list = base
-
         for index in 0..<list.count {
             let newIndex = Int(arc4random_uniform(UInt32(list.count-index))) + index
-
             if index != newIndex {
                 list.swapAt(index, newIndex)
             }
         }
-        
         return list
     }
 }

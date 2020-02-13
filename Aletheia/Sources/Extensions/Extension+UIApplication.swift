@@ -12,47 +12,41 @@ import Foundation
 
 /// NSObject haa been conform to protocol 'AletheiaCompatible',
 /// so 'UIApplication' can benefit from it
-extension AletheiaWrapper where Base == UIApplication {
-    
-    /// 拿到目前應用程式當前的 ViewController，透過遞迴方式取得
+extension AletheiaWrapper where Base: UIApplication {
+        
+    /// Get top most UIViewController
     ///
-    /// - parameter base: 默認是 rootViewController，然後一層層往上搜尋
-    ///
-    /// - Returns: 當前在最上層的 ViewController
-    public func toppestViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController?
+    /// - parameter base: Current rootViewController of keyWindow.
+    /// - Return: UIViewController
+    public func getToppestViewController(base: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController?
     {
         if let nav = base as? UINavigationController {
-            return toppestViewController(base: nav.visibleViewController)
+            return getToppestViewController(base: nav.visibleViewController)
         }
         
         if let tab = base as? UITabBarController {
             let moreNavigationController = tab.moreNavigationController
             
             if let top = moreNavigationController.topViewController, top.view.window != nil {
-                return toppestViewController(base: top)
+                return getToppestViewController(base: top)
             } else if let selected = tab.selectedViewController {
-                return toppestViewController(base: selected)
+                return getToppestViewController(base: selected)
             }
         }
         
         if let presented = base?.presentedViewController {
-            return toppestViewController(base: presented)
+            return getToppestViewController(base: presented)
         }
         return base
     }
     
-    /// Detect whether application can open URL or not
+    /// Open the specified URL asynchronously.
     ///
     /// - Parameter url: url
-    public func openURL(with url: String) {
+    public func doOpenURL(with url: String) {
     
-        guard let aURL = URL(string: url) else {
+        guard let aURL = url.al.toURL() else {
             Logger().error("\(url) cannot be formed with the string")
-            return
-        }
-        
-        if !UIApplication.shared.canOpenURL(aURL) {
-            Logger().error("UIApplication can't open => \(aURL)")
             return
         }
         
@@ -63,11 +57,11 @@ extension AletheiaWrapper where Base == UIApplication {
         }
     }
     
-    /// Convert given view origin (x, y) to key window coordinate
+    /// Convert given view origin (x, y) into key window coordinate.
     ///
-    /// - Parameter sender: the view need to be convert
-    /// - Returns: the view in window's coordinate
-    public func toKeyWindowsCoordinate(sender: UIView) -> CGPoint? {
+    /// - Parameter sender: The view needed to be convert
+    /// - Return: The view in window's coordinate
+    public func getKeyWindowsCoordinate(sender: UIView) -> CGPoint? {
         var point: CGPoint?
         guard let window = UIApplication.shared.keyWindow else { return point }
         guard let superView = sender.superview else { return point }
@@ -76,12 +70,9 @@ extension AletheiaWrapper where Base == UIApplication {
     }
     
     /// Get status bar
-    public var statusBarView: UIView? {
-        return base.value(forKey: "statusBar") as? UIView
-    }
-    
-    /// Get status bar
-    public var statusBarUIView: UIView? {
+    ///
+    /// - Return: UIView?
+    public var getStatusBar: UIView? {
         if #available(iOS 13.0, *) {
             let tag = 1231415
             if let statusBar = base.keyWindow?.viewWithTag(tag) {
@@ -89,7 +80,6 @@ extension AletheiaWrapper where Base == UIApplication {
             } else {
                 let statusBarView = UIView(frame: UIApplication.shared.statusBarFrame)
                 statusBarView.tag = tag
-
                 base.keyWindow?.addSubview(statusBarView)
                 return statusBarView
             }

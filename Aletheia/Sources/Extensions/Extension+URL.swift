@@ -13,12 +13,12 @@ extension AletheiaWrapper where Base == URL {
     
     /// Get url query value via key
     ///
-    /// If the URL is **http://www.google.com?AAAA=1111&BBBB=2222&CCCC=3333**, then give **AAAA** as key, its return **1111** .then give **BBBB** as key, its return **2222**.
+    /// If the URL is **http://www.google.com?AAAA=1111&BBBB=2222&CCCC=3333**, then give **AAAA** as key, its return **1111**. Then give **BBBB** as key, its return **2222**.
     ///
     /// - Parameters:
     ///   - aURL: url string
     ///   - key: a string key
-    /// - Returns: correspond value via given key
+    /// - Return: correspond value via given key
     public func getQueryItem(aURL: String?, key: String) -> String? {
         
         guard let aURLString = aURL else { return nil }
@@ -31,19 +31,18 @@ extension AletheiaWrapper where Base == URL {
     
     /// Appending query string
     ///
-    /// *** Example
+    /// ``` Example
     ///
     /// var url = URL(string: "https://www.example.com")
-    /// let finalURL = url?.appending("key1", value: "123")
-    ///                    .appending("key2", value: nil)
-    ///
-    /// ***
+    /// let finalURL = url?.al.doAppend("key1", value: "value1")?
+    ///                    .al.doAppend("key2", value: nil)?
+    ///                    .al.doAppend("key3", value: "value3")
+    /// ```
     ///
     /// - Parameters:
     ///   - key: Key
     ///   - value: Value
-    public func appending(_ key: String, value: String?) -> URL? {
-
+    public func doAppendComponent(_ key: String, value: String?) -> URL? {
          guard var urlComponents = URLComponents(string: base.absoluteString) else { return base.absoluteURL }
 
          // Create array of existing query items
@@ -58,7 +57,7 @@ extension AletheiaWrapper where Base == URL {
          // Append updated query items array in the url component object
          urlComponents.queryItems = queryItems
 
-         // Returns the url from new url components
+         // Return the url from new url components
          return urlComponents.url
      }
 

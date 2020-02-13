@@ -10,9 +10,9 @@ import Foundation
 extension Character: AletheiaCompatibleValue { }
 extension AletheiaWrapper where Base == Character {
 
-	/// Is given character Emoji
+	/// Is given character Emoji?
     ///
-    /// [參考](http://stackoverflow.com/questions/30757193/find-out-if-character-in-string-is-emoji)
+    /// [Cf.](http://stackoverflow.com/questions/30757193/find-out-if-character-in-string-is-emoji)
     ///
 	public var isEmoji: Bool {
         
@@ -31,7 +31,7 @@ extension AletheiaWrapper where Base == Character {
 		}
 	}
 
-    /// Is number ?
+    /// Is number?
 	public var isNumber: Bool {
 		return Int(String(base)) != nil
 	}

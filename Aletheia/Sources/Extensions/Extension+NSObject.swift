@@ -8,18 +8,17 @@
 import UIKit
 
 extension NSObject: AletheiaCompatible { }
-extension AletheiaWrapper where Base == NSObject {
+extension AletheiaWrapper where Base: NSObject {
     
-    /// Get string name of class
-    ///
-    /// How to usage
+    /// Get the name of class
     ///
     /// ```swift
     ///
-    /// MyClass.className   //=> "MyClass"
+    /// MyClass.al.className   //=> "MyClass"
     ///
     /// ```
-    public var className: String {
+    /// - Return: CGFloat
+    public var getClassName: String {
         return String(describing: self)
     }
 }

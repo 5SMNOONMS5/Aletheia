@@ -7,7 +7,7 @@
 
 import Foundation
 
-/// Dictionary operator with generic methods
+/// Dictionary add operator
 ///
 /// - Parameters:
 ///   - left: a dictionary
